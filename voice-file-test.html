@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>肩康复 · 音频文件声控验证</title><style>body{max-width:880px;margin:36px auto;padding:0 22px;background:#f5f7f4;color:#18362e;font:17px/1.7 system-ui}h1{font-size:28px}button,input{font:inherit;margin:8px 8px 8px 0;padding:10px}button{border:0;border-radius:10px;background:#245b4c;color:white;cursor:pointer}button:disabled{opacity:.5}section{background:white;padding:20px;border-radius:16px;margin:18px 0}pre{white-space:pre-wrap;word-break:break-word;font:13px/1.6 monospace}#result{font-weight:bold;font-size:21px}.muted{color:#61716a}a{color:#245b4c}</style>
+<h1>音频文件声控验证</h1><p>把真实音频文件读入浏览器本地中文识别模型，再用识别结果执行「开始 / 暂停 / 继续」。音频不发送到识别服务器。</p>
+<section><label>选择 Edge TTS 晓晓测试音频<input id="file" type="file" accept="audio/*"></label><br><button id="run" disabled>读取文件并测试</button><p id="result" role="status">请选择音频文件</p><p id="state">训练状态：等待开始</p><p id="transcripts"></p></section>
+<p class="muted">首次需下载中文模型。此页只验证文件识别和命令响应；实际麦克风、噪声和扬声器回声另需实测。正式训练网页尚未改动。</p>
+<details open><summary>原始识别与状态日志</summary><pre id="log"></pre></details>
+<p class="muted">识别：Vosk Browser 0.0.8 / vosk-model-small-cn-0.3。<a href="https://github.com/ccoreilly/vosk-browser">源码与许可</a></p>
+<script src="https://cdn.jsdelivr.net/npm/vosk-browser@0.0.8/dist/vosk.js"></script><script>
+'use strict';
+const $=id=>document.getElementById(id);const commands=['开始','暂停','继续'];let model;const MODEL='https://ccoreilly.github.io/vosk-browser/models/vosk-model-small-cn-0.3.tar.gz';
+function log(event,data){$('log').textContent+=JSON.stringify({time:new Date().toISOString(),event,...data})+'\n';}
+$('file').onchange=()=>{$('run').disabled=!$('file').files.length;$('result').textContent=$('file').files.length?'已选择：'+$('file').files[0].name:'请选择音频文件';};
+$('run').onclick=async()=>{
+ $('run').disabled=true;$('log').textContent='';$('transcripts').textContent='';let rec,ctx,pending;const actual=[],recognized=[];let state='ready';const t=performance.now();
+ function display(){ $('state').textContent='训练状态：'+({ready:'等待开始',running:'计时中',paused:'已暂停'})[state]; }
+ function handle(m){const r=m.result||{};if(m.event==='result'&&r.text){recognized.push(r.text);const word=r.text.replace(/[\s，。！？,.!?]/g,'');log('识别结果',{text:r.text,words:r.result});if(commands.includes(word)){const before=state;let accepted=false;if(word==='开始'&&state==='ready'){state='running';accepted=true;}else if(word==='暂停'&&state==='running'){state='paused';accepted=true;}else if(word==='继续'&&state==='paused'){state='running';accepted=true;}actual.push({word,accepted});log('控制动作',{word,before,after:state,accepted});display();if(actual.length%3===0&&word==='继续'){state='ready';log('测试夹具',{message:'下一组测试，重置为等待开始'});}}$('transcripts').textContent='原始识别：'+recognized.join(' → ');}if(pending){const done=pending;pending=null;done();}}
+ function feed(samples){return new Promise((resolve,reject)=>{const timeout=setTimeout(()=>{pending=null;reject(Error('识别模型处理超时'));},10000);pending=()=>{clearTimeout(timeout);resolve();};rec.acceptWaveformFloat(samples,16000);});}
+ try{
+  const file=$('file').files[0];log('输入文件',{name:file.name,bytes:file.size});$('result').textContent='加载中文模型…';if(!window.Vosk)throw Error('识别脚本加载失败');
+  if(!model)model=await Promise.race([Vosk.createModel(MODEL,-1),new Promise((_,reject)=>setTimeout(()=>reject(Error('模型加载超时')),120000))]);
+  $('result').textContent='解码音频文件…';ctx=new AudioContext({sampleRate:16000});const audio=await ctx.decodeAudioData(await file.arrayBuffer());log('音频格式',{sampleRate:audio.sampleRate,channels:audio.numberOfChannels,duration:audio.duration});
+  const offline=new OfflineAudioContext(1,Math.ceil(audio.duration*16000),16000);const source=offline.createBufferSource();source.buffer=audio;source.connect(offline.destination);source.start();const mono=(await offline.startRendering()).getChannelData(0);
+  rec=new model.KaldiRecognizer(16000);rec.setWords(true);rec.on('result',handle);rec.on('partialresult',handle);model.on('error',e=>log('模型错误',{message:e.error}));
+  for(let offset=0;offset<mono.length;offset+=1600){await feed(mono.slice(offset,offset+1600));if(offset%16000===0)$('result').textContent='正在识别 '+Math.round(offset/mono.length*100)+'%';}
+  for(let i=0;i<20;i++)await feed(new Float32Array(1600));
+  const expected=['开始','暂停','继续','开始','暂停','继续','开始','暂停','继续'];const ok=actual.length===expected.length&&actual.every((x,i)=>x.word===expected[i]&&x.accepted);
+  $('result').textContent=ok?'通过：9/9 个口令识别正确，三轮状态切换成功':'测试完成：'+actual.length+' 个口令；请核对下方原始结果';
+  log('总结',{ok,actual,recognized,seconds:(performance.now()-t)/1000,scope:'真实音频文件 → 浏览器内 Vosk → 命令状态；不是麦克风实测'});
+ }catch(e){$('result').textContent='未通过：'+e.message;log('错误',{message:e.message});}finally{if(rec)rec.remove();if(ctx)await ctx.close();$('run').disabled=false;}
+};
+</script></html>
