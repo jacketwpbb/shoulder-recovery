@@ -74,7 +74,7 @@ class VoiceControl{
   if(performance.now()<this.cooldown)return;
   if(!this.rec)this.newRecognizer();
   this.notify('正在聆听：开始 / 暂停 / 继续');
-  try{this.rec.acceptWaveformFloat(samples,rate);}catch(e){this.fail('声控处理出错，请重新开启');}
+  try{this.rec.acceptWaveformFloat(new Float32Array(samples),rate);}catch(e){this.lastError=e.message;console.error('Voice input failed',e);this.fail('声控处理出错，请重新开启');}
  }
  interrupt(){this.cooldown=performance.now()+450;if(this.rec){this.rec.remove();this.rec=null;}}
  fail(message){this.disable();if(this.model){this.model.terminate();this.model=null;}this.notify(message);this.onFailure(message);}

@@ -22,7 +22,7 @@ $('run').onclick=async()=>{
   await new Promise(r=>setTimeout(r,1000));
   const expected=[['开始','ready','running'],['暂停','running','paused'],['继续','paused','running']];
   const ok=events.length===3&&events.every((e,i)=>[e.word,e.before,e.after].every((v,j)=>v===expected[i][j]))&&pauseCheck&&resumeCheck;
-  $('result').textContent=ok?'通过：3/3 口令控制实际计时，暂停保持剩余时间，继续后恢复倒计时':'未通过，请查看日志';log('总结',{ok,events:events.length,pauseCheck,resumeCheck,scope:'浏览器真实文件音频与页面计时联动；未测试物理麦克风和声学回声'});
+  $('result').textContent=ok?'通过：3/3 口令控制实际计时，暂停保持剩余时间，继续后恢复倒计时':'未通过，请查看日志';log('总结',{ok,voiceStatus:api.commands().status,lastError:api.commands().lastError,events:events.length,pauseCheck,resumeCheck,scope:'浏览器真实文件音频与页面计时联动；未测试物理麦克风和声学回声'});
  }catch(e){$('result').textContent='未通过：'+e.message;log('错误',{message:e.message});}finally{if(ctx)await ctx.close();api?.commands().disable();$('run').disabled=false;}
 };
 </script></html>
