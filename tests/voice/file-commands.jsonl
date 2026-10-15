@@ -1,0 +1,25 @@
+{"time":"2026-10-15T04:12:59.423Z","event":"输入文件","name":"Edge TTS 晓晓 start/pause/resume.mp3 × 3","voice":"zh-CN-XiaoxiaoNeural","rate":"-8%"}
+{"time":"2026-10-15T04:12:59.444Z","event":"音频格式","sampleRate":16000,"channels":1,"duration":46.848}
+{"time":"2026-10-15T04:12:59.449Z","event":"识别词表","allowed":["开始","暂停","继续","<UNK>"],"unknown":"非口令保留为未知，不执行动作"}
+{"time":"2026-10-15T04:13:00.157Z","event":"识别结果","text":"开始","words":[{"conf":1,"end":3.9,"start":2.88,"word":"开始"}]}
+{"time":"2026-10-15T04:13:00.158Z","event":"控制动作","word":"开始","before":"ready","after":"running","accepted":true}
+{"time":"2026-10-15T04:13:00.809Z","event":"识别结果","text":"暂停","words":[{"conf":1,"end":8.76,"start":7.74,"word":"暂停"}]}
+{"time":"2026-10-15T04:13:00.809Z","event":"控制动作","word":"暂停","before":"running","after":"paused","accepted":true}
+{"time":"2026-10-15T04:13:01.473Z","event":"识别结果","text":"继续","words":[{"conf":1,"end":13.62,"start":12.63,"word":"继续"}]}
+{"time":"2026-10-15T04:13:01.473Z","event":"控制动作","word":"继续","before":"paused","after":"running","accepted":true}
+{"time":"2026-10-15T04:13:01.473Z","event":"测试夹具","message":"下一组测试，重置为等待开始"}
+{"time":"2026-10-15T04:13:02.171Z","event":"识别结果","text":"开始","words":[{"conf":1,"end":18.54,"start":17.49,"word":"开始"}]}
+{"time":"2026-10-15T04:13:02.171Z","event":"控制动作","word":"开始","before":"ready","after":"running","accepted":true}
+{"time":"2026-10-15T04:13:02.843Z","event":"识别结果","text":"暂停","words":[{"conf":1,"end":23.37,"start":22.38,"word":"暂停"}]}
+{"time":"2026-10-15T04:13:02.843Z","event":"控制动作","word":"暂停","before":"running","after":"paused","accepted":true}
+{"time":"2026-10-15T04:13:03.533Z","event":"识别结果","text":"继续","words":[{"conf":1,"end":28.229866,"start":27.24,"word":"继续"}]}
+{"time":"2026-10-15T04:13:03.533Z","event":"控制动作","word":"继续","before":"paused","after":"running","accepted":true}
+{"time":"2026-10-15T04:13:03.533Z","event":"测试夹具","message":"下一组测试，重置为等待开始"}
+{"time":"2026-10-15T04:13:04.245Z","event":"识别结果","text":"开始","words":[{"conf":1,"end":33.15,"start":32.13,"word":"开始"}]}
+{"time":"2026-10-15T04:13:04.245Z","event":"控制动作","word":"开始","before":"ready","after":"running","accepted":true}
+{"time":"2026-10-15T04:13:04.913Z","event":"识别结果","text":"暂停","words":[{"conf":1,"end":37.98,"start":36.99,"word":"暂停"}]}
+{"time":"2026-10-15T04:13:04.913Z","event":"控制动作","word":"暂停","before":"running","after":"paused","accepted":true}
+{"time":"2026-10-15T04:13:05.612Z","event":"识别结果","text":"继续","words":[{"conf":1,"end":42.839813,"start":41.85,"word":"继续"}]}
+{"time":"2026-10-15T04:13:05.612Z","event":"控制动作","word":"继续","before":"paused","after":"running","accepted":true}
+{"time":"2026-10-15T04:13:05.612Z","event":"测试夹具","message":"下一组测试，重置为等待开始"}
+{"time":"2026-10-15T04:13:06.335Z","event":"总结","ok":true,"actual":[{"word":"开始","accepted":true},{"word":"暂停","accepted":true},{"word":"继续","accepted":true},{"word":"开始","accepted":true},{"word":"暂停","accepted":true},{"word":"继续","accepted":true},{"word":"开始","accepted":true},{"word":"暂停","accepted":true},{"word":"继续","accepted":true}],"recognized":["开始","暂停","继续","开始","暂停","继续","开始","暂停","继续"],"seconds":6.912600000000094,"scope":"真实音频文件 → 浏览器内 Vosk → 命令状态；不是麦克风实测"}

@@ -14,16 +14,16 @@
 <body><main class="app">
 <header><h1>康复计时</h1><div class="header-actions"><button id="settingsButton" type="button" class="icon-button" aria-label="设置" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="12.000,5.000 12.914,5.060 14.329,3.307 15.444,3.685 16.500,4.206 17.479,4.860 16.950,7.050 17.553,7.739 18.062,8.500 18.467,9.321 20.693,9.671 20.923,10.825 21.000,12.000 20.923,13.175 18.761,13.812 18.467,14.679 18.062,15.500 17.553,16.261 18.364,18.364 17.479,19.140 16.500,19.794 15.444,20.315 13.812,18.761 12.914,18.940 12.000,19.000 11.086,18.940 9.671,20.693 8.556,20.315 7.500,19.794 6.521,19.140 7.050,16.950 6.447,16.261 5.938,15.500 5.533,14.679 3.307,14.329 3.077,13.175 3.000,12.000 3.077,10.825 5.239,10.188 5.533,9.321 5.938,8.500 6.447,7.739 5.636,5.636 6.521,4.860 7.500,4.206 8.556,3.685 10.188,5.239 11.086,5.060"/><circle cx="12" cy="12" r="3"/></svg></button></div></header>
 <nav aria-label="选择动作"><button type="button" data-scope="0" class="selected" aria-pressed="true">抬手</button><button type="button" data-scope="1" aria-pressed="false">小臂</button><button type="button" data-scope="2" aria-pressed="false">转圈</button></nav>
-<div class="mode-picker" role="group" aria-label="操作模式"><button id="assistedMode" type="button" aria-pressed="true">陪同模式</button><button id="soloMode" type="button" aria-pressed="false">单人模式 · 自动</button></div>
-<p id="modeHint" class="mode-hint"></p><p id="audioError" role="alert" hidden class="audio-error">语音播放中断，已暂停。请确认手机音量，再点击继续重试。</p>
+<div class="mode-picker" role="group" aria-label="操作模式"><button id="assistedMode" type="button" aria-pressed="true">陪同模式</button><button id="soloMode" type="button" aria-pressed="false">单人模式 · 声控</button></div>
+<div id="voiceControls" hidden><button id="voiceEnable" type="button" class="icon-button">开启声控</button><span id="voiceControlStatus" class="mode-hint" role="status">声控未开启</span></div><p id="modeHint" class="mode-hint"></p><p id="audioError" role="alert" hidden class="audio-error">语音播放中断，已暂停。请确认手机音量，再点击继续重试。</p>
 <section class="trainer" aria-label="训练计时"><div class="phase"><span id="phase">抬到额头</span><span id="round">1 / 10</span></div><div class="dial"><svg viewBox="0 0 300 300" aria-hidden="true"><circle class="track" cx="150" cy="150" r="139"/><circle id="arc" class="arc" cx="150" cy="150" r="139"/></svg><div class="dial-text"><span id="status">准备</span><div id="time" role="timer" aria-live="off">01:00</div><span id="next"></span></div></div>
 <p id="voiceCaption" class="mode-hint" aria-live="off" style="min-height:42px;margin-bottom:16px"></p><div class="controls"><button type="button" id="primary" class="primary">开始</button><button type="button" id="add" class="extra" hidden>休息 +20 秒</button></div><div class="skip-controls"><button type="button" id="previousRound" disabled><span aria-hidden="true">‹</span> 上一组</button><button type="button" id="nextRound">下一组 <span aria-hidden="true">›</span></button></div><div class="secondary"><span id="total">24:20</span></div><div class="progress" aria-hidden="true"><div id="progress"></div></div></section>
-<section id="settingsPanel" hidden aria-label="设置"><form id="settingsForm"><div class="setting-title">抬手</div><div class="fields"><label class="wide">保持（秒）<input id="liftSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="restSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="liftRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">小臂</div><div class="fields"><label>垂下（秒）<input id="downSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>抬起（秒）<input id="upSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>休息（秒）<input id="elbowRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="elbowRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">转圈</div><div class="fields"><label class="wide">动作（秒）<input id="circleSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="circleRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="circleRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><label class="check">背景音乐<input id="musicEnabled" type="checkbox" checked></label><button type="submit" class="primary save">保存</button></form></section>
+<section id="settingsPanel" hidden aria-label="设置"><form id="settingsForm"><div class="setting-title">抬手</div><div class="fields"><label class="wide">保持（秒）<input id="liftSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="restSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="liftRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">小臂</div><div class="fields"><label>垂下（秒）<input id="downSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>抬起（秒）<input id="upSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>休息（秒）<input id="elbowRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="elbowRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">转圈</div><div class="fields"><label class="wide">动作（秒）<input id="circleSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="circleRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="circleRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><p class="mode-hint">单人声控时暂停背景音乐，方便听清口令。</p><label class="check">背景音乐<input id="musicEnabled" type="checkbox" checked></label><button type="submit" class="primary save">保存</button></form></section>
 <p id="live" class="sr-only" aria-live="polite"></p><p id="awakeStatus" hidden style="font-size:12px;color:#738078;text-align:center"></p></main>
 <script>/* Pure plan builder: no network, storage or browser dependencies. */
 (function(root){
 'use strict';
-const DEFAULTS=Object.freeze({liftSeconds:30,restSeconds:70,liftRounds:10,downSeconds:10,upSeconds:10,elbowRounds:5,elbowRestSeconds:0,circleSeconds:60,circleRounds:1,circleRestSeconds:0,solo:false,lastRest:true,voice:true,music:true,voiceURI:'embedded',rate:1,countdown:true,keepAwake:true});
+const DEFAULTS=Object.freeze({liftSeconds:30,restSeconds:70,liftRounds:10,downSeconds:10,upSeconds:10,elbowRounds:5,elbowRestSeconds:0,circleSeconds:60,circleRounds:1,circleRestSeconds:0,solo:false,voiceControl:false,lastRest:true,voice:true,music:true,voiceURI:'embedded',rate:1,countdown:true,keepAwake:true});
 const LIMITS={liftSeconds:[5,600],restSeconds:[0,600],liftRounds:[1,30],downSeconds:[2,120],upSeconds:[2,120],elbowRounds:[1,30],elbowRestSeconds:[0,600],circleSeconds:[5,600],circleRounds:[1,30],circleRestSeconds:[0,600]};
 function sanitize(raw={}){
  const x={...DEFAULTS};
@@ -31,7 +31,7 @@ function sanitize(raw={}){
   const value=Number(raw[key]);
   if(raw[key]!==undefined && raw[key]!=='' && Number.isFinite(value))x[key]=Math.max(min,Math.min(max,Math.round(value)));
  }
- for(const k of ['solo','music','countdown','keepAwake'])if(typeof raw[k]==='boolean')x[k]=raw[k];
+ for(const k of ['solo','voiceControl','music','countdown','keepAwake'])if(typeof raw[k]==='boolean')x[k]=raw[k];
  x.voiceURI='embedded';
  if(Number.isFinite(Number(raw.rate)) && raw.rate!=='')x.rate=Math.max(.7,Math.min(1.2,Number(raw.rate)));
  return x;
@@ -274,7 +274,7 @@ class RecoveryMusic{
 }
 root.RecoveryMusic=RecoveryMusic;
 })(window);
-</script><script>(function(){
+</script><script src="assets/voice-control-prompt.js?v=20261015"></script><script src="assets/voice-control.js?v=20261015-crossrealm2"></script><script>(function(){
 'use strict';
 const C=window.RecoveryCore,Session=window.RecoverySession,$=id=>document.getElementById(id);
 const SETTINGS='slow-recovery-settings-v2',PROGRESS='slow-recovery-session-v2';
@@ -282,6 +282,18 @@ const fields=['liftSeconds','restSeconds','liftRounds','downSeconds','upSeconds'
 function read(k){try{return JSON.parse(localStorage.getItem(k));}catch(_){return null;}}
 function write(k,v){try{if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,JSON.stringify(v));}catch(_){}}
 let settings=C.sanitize(read(SETTINGS)||{}),session;
+// Migrate the previous automatic solo mode to the same phase plan used by assisted mode.
+if(settings.solo){
+ settings.solo=false;settings.voiceControl=true;write(SETTINGS,settings);
+ const old=read(PROGRESS);
+ if(old?.settings?.solo){
+  const phase=C.buildPlan(old.settings,old.scope)[old.index];
+  if(phase){const next={...old.settings,solo:false,voiceControl:true},plan=C.buildPlan(next,old.scope),kind=phase.kind==='prep'?phase.targetKind:phase.kind==='lower'?'rest':phase.kind;
+   const index=plan.findIndex(p=>p.exercise===phase.exercise&&p.round===phase.round&&p.kind===kind);
+   if(index>=0){const changed=['prep','lower'].includes(phase.kind);write(PROGRESS,{...old,settings:next,index,state:'paused',resumeState:changed?(kind==='rest'?'cue':'ready'):old.resumeState,remainingMs:changed?plan[index].seconds*1000:Math.min(old.remainingMs,plan[index].seconds*1000),extra:{}});}
+  }
+ }
+}
 if(read('manual-hold-revision')!==1){settings.liftSeconds=30;write(SETTINGS,settings);write(PROGRESS,null);write('manual-hold-revision',1);}
 session=Session.restore(read(PROGRESS))||new Session(settings);
 if(session.scope!=='all'){
@@ -298,13 +310,33 @@ if(read('slow-recovery-voice-revision')!=='edge-xiaoxiao-20261010'){
 }
 let epoch=0,lastTick=performance.now(),savedAt=0,wake=null,wakeGeneration=0,extraPending=0,extraTimeout,announced=new Set();
 const voice=new window.RecoveryVoice(window.RECOVERY_AUDIO,()=>{
- if(settings.solo){cancel();session.pause('audio');$('audioError').hidden=false;}
+ if(settings.solo||settings.voiceControl){cancel();session.pause('audio');$('audioError').hidden=false;}
  else{settings.voice=false;session.settings=settings;voice.cancel();}
  render();save();
 });
 const music=new window.RecoveryMusic(()=>voice.ctx);
+let voiceTestObserver=null;
+const commands=new window.RecoveryVoiceControl({
+ blocked:()=>voice.playing||document.hidden||!$('settingsPanel').hidden||!settings.voiceControl,
+ onStatus:text=>{ $('voiceControlStatus').textContent=text;$('voiceEnable').textContent=commands?.active?'关闭声控':commands?.loading?'取消加载':'开启声控'; },
+ onFailure:()=>{if(settings.voiceControl)pause(false);},
+ onCommand:(word,result)=>{
+  const before=session.state,remaining=session.remainingMs;
+  if(word==='开始'&&session.state==='ready')startExercise();
+  else if(word==='开始'&&['idle','between'].includes(session.state))primary();
+  else if(word==='暂停'&&['running','cue','ready'].includes(session.state))pause();
+  else if(word==='继续'&&session.state==='paused')primary();
+  voiceTestObserver?.({word,before,after:session.state,remainingBefore:remaining,remainingAfter:session.remainingMs,result});
+ }
+});
+async function enableCommands(){
+ if(commands.active||commands.loading){commands.disable();pause(false);return;}
+ try{await voice.unlock();await commands.enable();}catch(e){commands.fail(e.message||'音频无法开启');}
+ if(commands.active&&['idle','between'].includes(session.state))primary();
+}
+$('voiceEnable').onclick=()=>void enableCommands();
 function save(){write(SETTINGS,settings);write(PROGRESS,session.isActive?session.snapshot():null);}
-function say(ids,text,force=false,rate=settings.rate){return voice.speak(ids,text,{enabled:settings.voice,voiceURI:settings.voiceURI,rate,force});}
+function say(ids,text,force=false,rate=settings.rate){if(settings.voiceControl)commands.interrupt();return voice.speak(ids,text,{enabled:settings.voice,voiceURI:settings.voiceURI,rate,force});}
 function cancel(){epoch++;voice.cancel();music.stop();clearTimeout(extraTimeout);extraPending=0;}
 function sound(kind){if(settings.voice)void voice.tone(kind);}
 function startExercise(){
@@ -325,7 +357,8 @@ function announceRemaining(before=Infinity){
  }
  else if(seconds===30&&session.phaseSeconds>=40){announced.add(seconds);void say(['remaining_30'],'还剩三十秒。');}
  else if(settings.solo&&session.current.kind!=='rest'&&seconds===10){announced.add(seconds);void say(['solo_ten'],'还有十秒。');}
- else if(!settings.solo&&session.current.kind!=='rest'&&seconds>=1&&seconds<=10){announced.add(seconds);void say(['count_'+seconds],String(seconds),false,1);}
+ else if(settings.voiceControl&&session.current.kind!=='rest'&&seconds===10){announced.add(seconds);void say(['solo_ten'],'还有十秒。');}
+ else if(!settings.solo&&!settings.voiceControl&&session.current.kind!=='rest'&&seconds>=1&&seconds<=10){announced.add(seconds);void say(['count_'+seconds],String(seconds),false,1);}
 }
 let wakePending=false,wakeRetryAt=0,compatWake=null,compatActive=false;
 function needsWake(){return session.isActive&&!document.hidden;}
@@ -374,6 +407,7 @@ function cue(full=false){
   return {ids,text:ids.map(id=>window.RECOVERY_AUDIO.clips[id]?.text||'').join('')};
  }
 
+ if(settings.voiceControl&&p.kind==='lift')return {ids:[...(p.round===1?['lift']:['group_'+p.round]),'voice_ready'],text:'左手缓慢托起右手，到额头的位置。动作就位后，说开始。'};
  if(p.kind==='lift')return p.round===1?{ids:['lift','manual_ready'],text:'左手缓慢托起右手，到额头的位置。抬好后，点击开始计时。'}:{ids:['group_'+p.round],text:`第${p.round}组。`};
  if(p.kind==='rest'){
   if(p.exercise!==0)return {ids:['rest_generic'],text:'这一组完成了，休息一下。'};
@@ -405,7 +439,7 @@ async function runCue(){
  if(token!==epoch||session.state!=='cue')return;
  if(settings.solo&&!succeeded){pause(false);session.reason='audio';$('audioError').hidden=false;save();return;}
  if(document.hidden){pause(false);return;}
- if(!settings.solo&&session.current.kind!=='rest'){session.state='ready';render();save();return;}
+ if(!settings.solo&&session.current.kind!=='rest'){session.state='ready';render();if(settings.voiceControl)$('voiceCaption').textContent='动作就位后，说「开始」计时。';save();return;}
  session.cueFinished();lastTick=performance.now();render();save();announceRemaining();
  if(extraPending)flushExtra();
 }
@@ -423,6 +457,7 @@ function transition(event){
  cancel();lastTick=performance.now();render();save();
  if(event==='cue')void runCue();
  else if(event==='between'){
+  if(settings.voiceControl){session.start();void runCue();return;}
   void acquireWake();const previous=session.plan[session.index-1];
   const ids=previous?.kind==='lift'?['lower']:[];
   ids.push(previous?.kind==='rest'?(session.current.exercise===1?'ready_1':'ready_rest_circle'):(session.current.exercise===1?'ready_lift':'ready_2'));
@@ -436,7 +471,7 @@ function transition(event){
 }
 function tick(){
  const now=performance.now(),delta=now-lastTick;lastTick=now;
- music.sync(settings.music&&session.state==='running'&&!['rest','prep','lower'].includes(session.current.kind)&&!document.hidden,voice.playing);
+ music.sync(settings.music&&!settings.voiceControl&&session.state==='running'&&!['rest','prep','lower'].includes(session.current.kind)&&!document.hidden,voice.playing);
  if(needsWake()&&!wake&&!wakePending&&now>=wakeRetryAt)void acquireWake();
  if(session.state!=='running')return;
  if(settings.solo&&voice.ctx&&voice.ctx.state!=='running'){pause(false);session.reason='audio';$('audioError').hidden=false;render();save();return;}
@@ -505,9 +540,10 @@ function render(){
  $('round').textContent=session.state==='done'?'':p.round+' / '+p.rounds;
  if(p.kind==='prep'&&session.state!=='done')$('phase').textContent=({lift:'准备抬手',down:'准备垂下手',up:'准备抬起小臂',circle:'准备转圈'})[p.targetKind];
  $('status').textContent=session.reason==='audio'?'语音中断 · 已暂停':states[session.state];
- if(['idle','done'].includes(session.state))$('voiceCaption').textContent=session.state==='done'?'本次练习完成。':settings.solo?'点击一次开始，按语音提示完成动作、休息和后续练习。':'就位后手动开始计时。';
- $('modeHint').textContent=settings.solo?'语音自动引导 · 抬手就位 15 秒 · 其他就位 5 秒。放下手臂另留 10 秒；保持网页在前台。':'抬好或就位后，点击开始计时。练习中先暂停，再切换模式。';
- for(const [id,solo] of [['soloMode',true],['assistedMode',false]]){const b=$(id);b.setAttribute('aria-pressed',String(settings.solo===solo));b.disabled=['cue','ready','running'].includes(session.state);}
+ if(['idle','done'].includes(session.state))$('voiceCaption').textContent=session.state==='done'?'本次练习完成。':settings.solo?'点击一次开始，按语音提示完成动作、休息和后续练习。':settings.voiceControl?'开启声控，听完提示后说「开始」。':'就位后手动开始计时。';
+ $('voiceControls').hidden=!settings.voiceControl;
+ $('modeHint').textContent=settings.voiceControl?'动作就位后说「开始」，练习中说「暂停」，暂停后说「继续」。播报时暂不听取口令，屏幕按钮始终可用；请保持网页在前台。':settings.solo?'语音自动引导 · 抬手就位 15 秒 · 其他就位 5 秒。放下手臂另留 10 秒；保持网页在前台。':'抬好或就位后，点击开始计时。练习中先暂停，再切换模式。';
+ for(const [id,solo] of [['soloMode',true],['assistedMode',false]]){const b=$(id);b.setAttribute('aria-pressed',String(settings.voiceControl===solo));b.disabled=['cue','ready','running'].includes(session.state);}
 
  const next=session.plan[session.index+1];
  $('next').textContent=next&&session.state!=='done'?(rest?(next.exercise===p.exercise?'休息后 · 第 '+next.round+' 组':'休息后 · '+(['抬手练习','小臂练习','转圈练习'][next.exercise])):next.kind==='rest'?'做完后 · 休息':'接下来 · '+labels[next.kind]):'';
@@ -525,8 +561,8 @@ function render(){
 }
 $('primary').addEventListener('click',primary);
 function setMode(solo){
- if(settings.solo===solo||['cue','ready','running'].includes(session.state))return;
- settings={...settings,solo,voice:true};reset();
+ if(settings.voiceControl===solo||['cue','ready','running'].includes(session.state))return;
+ commands.disable();settings={...settings,solo:false,voiceControl:solo,voice:true};reset();if(solo)void enableCommands();
 }
 $('soloMode').addEventListener('click',()=>setMode(true));
 $('assistedMode').addEventListener('click',()=>setMode(false));
@@ -548,12 +584,14 @@ $('settingsForm').addEventListener('submit',e=>{
  settings=fresh;session.settings=settings;$('settingsPanel').hidden=true;$('settingsButton').setAttribute('aria-expanded','false');
  if(timingChanged)reset();else{render();save();}
 });
-document.addEventListener('visibilitychange',()=>{if(document.hidden){pause(false);voice.cancel();releaseWake();save();}else{lastTick=performance.now();void acquireWake();}});
-window.addEventListener('pagehide',()=>{pause(false);voice.cancel();releaseWake();save();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){commands.disable();pause(false);voice.cancel();releaseWake();save();}else{lastTick=performance.now();void acquireWake();}});
+window.addEventListener('pagehide',()=>{commands.disable();pause(false);voice.cancel();releaseWake();save();});
 window.addEventListener('pageshow',()=>{lastTick=performance.now();void acquireWake();});
 document.addEventListener('pointerdown',()=>{if(needsWake())void acquireWake();});
 setInterval(tick,100);render();
-if(location.hash==='#test')window.__recoveryTest={get:()=>session.snapshot(),session:()=>session,tick,render,voice:()=>voice,music:()=>music};
+if(location.hash==='#test')window.__recoveryTest={get:()=>session.snapshot(),session:()=>session,tick,render,voice:()=>voice,music:()=>music,commands:()=>commands,
+ prepareVoiceFileTest:async(observer)=>{await voice.unlock();commands.disable();settings={...settings,solo:false,voiceControl:true,liftSeconds:30};session=new Session(settings,0);session.state='ready';voiceTestObserver=observer;announced.clear();lastTick=performance.now();render();await commands.enable({file:true});},
+ feedVoice:(samples,rate)=>commands.feed(samples,rate)};
 })();
 </script>
 </body></html>

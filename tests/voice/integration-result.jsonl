@@ -1,0 +1,7 @@
+{"time":"2026-10-15T04:25:59.934Z","event":"输入","voice":"zh-CN-XiaoxiaoNeural","duration":19.616,"source":"真实 Edge TTS MP3 解码","speed":1}
+{"time":"2026-10-15T04:26:03.880Z","event":"真实识别控制","word":"开始","before":"ready","after":"running","remainingBefore":30000,"remainingAfter":30000,"result":{"result":[{"conf":1,"end":2.939691,"start":1.89,"word":"开始"}],"text":"开始"}}
+{"time":"2026-10-15T04:26:09.565Z","event":"真实识别控制","word":"暂停","before":"running","after":"paused","remainingBefore":24351.599999999627,"remainingAfter":24315,"result":{"result":[{"conf":1,"end":3.75,"start":2.73,"word":"暂停"}],"text":"暂停"}}
+{"time":"2026-10-15T04:26:10.565Z","event":"暂停时间检查","ok":true,"remaining":24315}
+{"time":"2026-10-15T04:26:15.467Z","event":"真实识别控制","word":"继续","before":"paused","after":"running","remainingBefore":24315,"remainingAfter":24315,"result":{"result":[{"conf":1,"end":3.72,"start":2.7,"word":"继续"}],"text":"继续"}}
+{"time":"2026-10-15T04:26:16.467Z","event":"恢复计时检查","ok":true,"remaining":23353.899999999907}
+{"time":"2026-10-15T04:26:20.635Z","event":"总结","ok":true,"voiceStatus":"正在聆听：开始 / 暂停 / 继续","events":3,"pauseCheck":true,"resumeCheck":true,"scope":"浏览器真实文件音频与页面计时联动；未测试物理麦克风和声学回声"}

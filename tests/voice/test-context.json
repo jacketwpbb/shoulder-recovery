@@ -1,0 +1,17 @@
+{
+  "tested_at": "2026-10-15",
+  "input_engine": "edge-tts",
+  "input_voice": "zh-CN-XiaoxiaoNeural",
+  "input_rate": "-8%",
+  "recognizer": "vosk-browser@0.0.8",
+  "model": "vosk-model-small-cn-0.3",
+  "grammar": [
+    "开始",
+    "暂停",
+    "继续",
+    "<UNK>"
+  ],
+  "command_matching": "exact final utterance after whitespace/punctuation normalization",
+  "scope": "Synthetic audio files in Chrome browser; physical microphone, ambient noise, mobile CPU performance and acoustic echo not verified.",
+  "prompt_audio_sha256": "4cb3fe9a77a65aec461d5063b2d9c2137b91703d08887d693c9c49b6e52b87b9"
+}
