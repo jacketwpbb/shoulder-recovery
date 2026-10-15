@@ -14,11 +14,10 @@
 <body><main class="app">
 <header><h1>康复计时</h1><div class="header-actions"><button id="settingsButton" type="button" class="icon-button" aria-label="设置" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="12.000,5.000 12.914,5.060 14.329,3.307 15.444,3.685 16.500,4.206 17.479,4.860 16.950,7.050 17.553,7.739 18.062,8.500 18.467,9.321 20.693,9.671 20.923,10.825 21.000,12.000 20.923,13.175 18.761,13.812 18.467,14.679 18.062,15.500 17.553,16.261 18.364,18.364 17.479,19.140 16.500,19.794 15.444,20.315 13.812,18.761 12.914,18.940 12.000,19.000 11.086,18.940 9.671,20.693 8.556,20.315 7.500,19.794 6.521,19.140 7.050,16.950 6.447,16.261 5.938,15.500 5.533,14.679 3.307,14.329 3.077,13.175 3.000,12.000 3.077,10.825 5.239,10.188 5.533,9.321 5.938,8.500 6.447,7.739 5.636,5.636 6.521,4.860 7.500,4.206 8.556,3.685 10.188,5.239 11.086,5.060"/><circle cx="12" cy="12" r="3"/></svg></button></div></header>
 <nav aria-label="选择动作"><button type="button" data-scope="0" class="selected" aria-pressed="true">抬手</button><button type="button" data-scope="1" aria-pressed="false">小臂</button><button type="button" data-scope="2" aria-pressed="false">转圈</button></nav>
-<div class="mode-picker" role="group" aria-label="操作模式"><button id="assistedMode" type="button" aria-pressed="true">陪同模式</button><button id="soloMode" type="button" aria-pressed="false">单人模式 · 声控</button></div>
-<div id="voiceControls" hidden><button id="voiceEnable" type="button" class="icon-button">开启声控</button><span id="voiceControlStatus" class="mode-hint" role="status">声控未开启</span></div><p id="modeHint" class="mode-hint"></p><p id="audioError" role="alert" hidden class="audio-error">语音播放中断，已暂停。请确认手机音量，再点击继续重试。</p>
+<div id="voiceControls"><button id="voiceEnable" type="button" class="icon-button" aria-pressed="false">开启声控</button><span id="voiceControlStatus" class="mode-hint" role="status">声控未开启</span></div><p id="modeHint" class="mode-hint"></p><p id="audioError" role="alert" hidden class="audio-error">语音播放中断，已暂停。请确认手机音量，再点击继续重试。</p>
 <section class="trainer" aria-label="训练计时"><div class="phase"><span id="phase">抬到额头</span><span id="round">1 / 10</span></div><div class="dial"><svg viewBox="0 0 300 300" aria-hidden="true"><circle class="track" cx="150" cy="150" r="139"/><circle id="arc" class="arc" cx="150" cy="150" r="139"/></svg><div class="dial-text"><span id="status">准备</span><div id="time" role="timer" aria-live="off">01:00</div><span id="next"></span></div></div>
 <p id="voiceCaption" class="mode-hint" aria-live="off" style="min-height:42px;margin-bottom:16px"></p><div class="controls"><button type="button" id="primary" class="primary">开始</button><button type="button" id="add" class="extra" hidden>休息 +20 秒</button></div><div class="skip-controls"><button type="button" id="previousRound" disabled><span aria-hidden="true">‹</span> 上一组</button><button type="button" id="nextRound">下一组 <span aria-hidden="true">›</span></button></div><div class="secondary"><span id="total">24:20</span></div><div class="progress" aria-hidden="true"><div id="progress"></div></div></section>
-<section id="settingsPanel" hidden aria-label="设置"><form id="settingsForm"><div class="setting-title">抬手</div><div class="fields"><label class="wide">保持（秒）<input id="liftSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="restSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="liftRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">小臂</div><div class="fields"><label>垂下（秒）<input id="downSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>抬起（秒）<input id="upSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>休息（秒）<input id="elbowRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="elbowRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">转圈</div><div class="fields"><label class="wide">动作（秒）<input id="circleSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="circleRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="circleRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><p class="mode-hint">单人声控时暂停背景音乐，方便听清口令。</p><label class="check">背景音乐<input id="musicEnabled" type="checkbox" checked></label><button type="submit" class="primary save">保存</button></form></section>
+<section id="settingsPanel" hidden aria-label="设置"><form id="settingsForm"><div class="setting-title">抬手</div><div class="fields"><label class="wide">保持（秒）<input id="liftSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="restSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="liftRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">小臂</div><div class="fields"><label>垂下（秒）<input id="downSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>抬起（秒）<input id="upSeconds" type="number" inputmode="numeric" min="2" max="120" required></label><label>休息（秒）<input id="elbowRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="elbowRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><div class="setting-title">转圈</div><div class="fields"><label class="wide">动作（秒）<input id="circleSeconds" type="number" inputmode="numeric" min="5" max="600" required></label><label>休息（秒）<input id="circleRestSeconds" type="number" inputmode="numeric" min="0" max="600" required></label><label>组数<input id="circleRounds" type="number" inputmode="numeric" min="1" max="30" required></label></div><p class="mode-hint">开启声控时暂停背景音乐，方便听清口令。</p><label class="check">背景音乐<input id="musicEnabled" type="checkbox" checked></label><button type="submit" class="primary save">保存</button></form></section>
 <p id="live" class="sr-only" aria-live="polite"></p><p id="awakeStatus" hidden style="font-size:12px;color:#738078;text-align:center"></p></main>
 <script>/* Pure plan builder: no network, storage or browser dependencies. */
 (function(root){
@@ -83,7 +82,7 @@ class Session {
  constructor(settings={},scope='all'){
   this.settings=C.sanitize(settings); this.scope=['all',0,1,2].includes(scope)?scope:'all';
   this.plan=C.buildPlan(this.settings,this.scope);this.index=0;this.state='idle';this.resumeState='cue';
-  this.extra={};this.remainingMs=this.current.seconds*1000;this.completed=false;this.reason='';
+  this.elbowContinuous=false;this.extra={};this.remainingMs=this.current.seconds*1000;this.completed=false;this.reason='';
  }
  get current(){return this.plan[this.index];}
  get phaseSeconds(){return this.current.seconds+(this.extra[this.index]||0);}
@@ -91,7 +90,9 @@ class Session {
  get remainingSeconds(){return this.remainingMs/1000+this.plan.slice(this.index+1).reduce((n,p,j)=>n+p.seconds+(this.extra[this.index+1+j]||0),0);}
  get isActive(){return ['cue','ready','running','paused','between'].includes(this.state);}
  start(){if(this.state==='idle'||this.state==='between'){this.state='cue';this.reason='';return true;}return false;}
- cueFinished(){if(this.state!=='cue')return false;this.state='running';return true;}
+ get needsReady(){return this.current.kind!=='rest'&&!(this.current.exercise===1&&this.elbowContinuous);}
+ cueFinished(){if(this.state!=='cue')return false;this.state=this.needsReady?'ready':'running';return true;}
+ startPrepared(){if(!['cue','ready'].includes(this.state)||this.current.kind==='rest')return false;this.elbowContinuous=this.current.exercise===1;this.state='running';this.reason='';return true;}
  pause(reason='manual'){if(!['running','cue','ready'].includes(this.state))return false;this.resumeState=this.state;this.state='paused';this.reason=reason;return true;}
  resume(){if(this.state!=='paused')return false;this.state=['cue','ready'].includes(this.resumeState)?this.resumeState:'running';this.reason='';return true;}
  tick(deltaMs){
@@ -103,7 +104,7 @@ class Session {
  }
  advance(){
   if(this.index+1>=this.plan.length){this.state='done';this.remainingMs=0;this.completed=true;return 'done';}
-  const prev=this.current;this.index++;this.remainingMs=this.phaseSeconds*1000;
+  const prev=this.current;this.index++;if(this.current.exercise!==1)this.elbowContinuous=false;this.remainingMs=this.phaseSeconds*1000;
   this.state=this.settings.solo||prev.exercise===this.current.exercise?'cue':'between';this.resumeState='cue';this.reason='';
   return this.state;
  }
@@ -113,6 +114,7 @@ class Session {
  jumpTo(index){
   if(!Number.isInteger(index)||index<0||index>=this.plan.length)return false;
   const previousState=this.state;
+  if(this.plan[index].exercise!==this.current.exercise||!this.isActive)this.elbowContinuous=false;
   this.index=index;delete this.extra[index];this.remainingMs=this.current.seconds*1000;
   this.state=['running','cue','ready'].includes(previousState)?'cue':previousState==='paused'?'paused':'idle';
   this.resumeState='cue';this.reason='';this.completed=false;return true;
@@ -122,7 +124,7 @@ class Session {
   this.extra[this.index]=(this.extra[this.index]||0)+seconds;this.remainingMs+=seconds*1000;return true;
  }
  stop(){this.state='done';this.completed=false;this.reason='stopped';}
- snapshot(){return {version:5,settings:this.settings,scope:this.scope,index:this.index,state:this.state,resumeState:this.resumeState,remainingMs:this.remainingMs,extra:this.extra,savedAt:Date.now()};}
+ snapshot(){return {version:5,settings:this.settings,scope:this.scope,index:this.index,state:this.state,resumeState:this.resumeState,remainingMs:this.remainingMs,extra:this.extra,elbowContinuous:this.elbowContinuous,savedAt:Date.now()};}
  static restore(data){
   if(!data||data.version!==5||!['cue','ready','running','paused','between'].includes(data.state))return null;
   const x=new Session(data.settings,data.scope);
@@ -134,6 +136,7 @@ class Session {
   if(!Number.isFinite(data.remainingMs)||data.remainingMs<0||data.remainingMs>x.phaseSeconds*1000+1)return null;
   x.remainingMs=data.remainingMs;x.state=data.state==='between'?'between':'paused';
   x.resumeState=['cue','ready'].includes(data.state)?data.state:(data.state==='paused'&&['cue','ready'].includes(data.resumeState)?data.resumeState:'running');
+  x.elbowContinuous=x.current.exercise===1&&(data.elbowContinuous===true||(data.elbowContinuous===undefined&&(data.state==='running'||data.resumeState==='running')));
   x.reason='restored';return x;
  }
 }
@@ -274,7 +277,7 @@ class RecoveryMusic{
 }
 root.RecoveryMusic=RecoveryMusic;
 })(window);
-</script><script src="assets/voice-control-prompt.js?v=20261015"></script><script src="assets/voice-control.js?v=20261015-crossrealm2"></script><script>(function(){
+</script><script src="assets/voice-control.js?v=20261015-crossrealm2"></script><script>(function(){
 'use strict';
 const C=window.RecoveryCore,Session=window.RecoverySession,$=id=>document.getElementById(id);
 const SETTINGS='slow-recovery-settings-v2',PROGRESS='slow-recovery-session-v2';
@@ -300,7 +303,7 @@ if(session.scope!=='all'){
  const previous=session,p=previous.current;session=new Session(previous.settings);
  session.jumpTo(session.plan.findIndex(q=>q.exercise===p.exercise&&q.round===p.round&&q.kind===p.kind));
  session.extra[session.index]=previous.extra[previous.index]||0;session.remainingMs=previous.remainingMs;
- session.state=previous.state;session.resumeState=previous.resumeState;
+ session.state=previous.state;session.resumeState=previous.resumeState;session.elbowContinuous=previous.elbowContinuous;
 }
 if(session.isActive){settings=C.sanitize({...session.settings,voice:settings.voice,voiceURI:settings.voiceURI});session.settings=settings;}
 if(read('slow-recovery-voice-revision')!=='edge-xiaoxiao-20261010'){
@@ -318,8 +321,8 @@ const music=new window.RecoveryMusic(()=>voice.ctx);
 let voiceTestObserver=null;
 const commands=new window.RecoveryVoiceControl({
  blocked:()=>voice.playing||document.hidden||!$('settingsPanel').hidden||!settings.voiceControl,
- onStatus:text=>{ $('voiceControlStatus').textContent=text;$('voiceEnable').textContent=commands?.active?'关闭声控':commands?.loading?'取消加载':'开启声控'; },
- onFailure:()=>{if(settings.voiceControl)pause(false);},
+ onStatus:text=>{ $('voiceControlStatus').textContent=text;$('voiceEnable').textContent=commands?.active?'关闭声控':commands?.loading?'取消加载':'开启声控';$('voiceEnable').setAttribute('aria-pressed',String(commands?.active||false)); },
+ onFailure:()=>{settings.voiceControl=false;session.settings=settings;render();save();},
  onCommand:(word,result)=>{
   const before=session.state,remaining=session.remainingMs;
   if(word==='开始'&&session.state==='ready')startExercise();
@@ -330,9 +333,9 @@ const commands=new window.RecoveryVoiceControl({
  }
 });
 async function enableCommands(){
- if(commands.active||commands.loading){commands.disable();pause(false);return;}
+ if(commands.active||commands.loading){commands.disable();settings.voiceControl=false;session.settings=settings;render();save();return;}
+ settings.voiceControl=true;session.settings=settings;render();save();
  try{await voice.unlock();await commands.enable();}catch(e){commands.fail(e.message||'音频无法开启');}
- if(commands.active&&['idle','between'].includes(session.state))primary();
 }
 $('voiceEnable').onclick=()=>void enableCommands();
 function save(){write(SETTINGS,settings);write(PROGRESS,session.isActive?session.snapshot():null);}
@@ -340,8 +343,8 @@ function say(ids,text,force=false,rate=settings.rate){if(settings.voiceControl)c
 function cancel(){epoch++;voice.cancel();music.stop();clearTimeout(extraTimeout);extraPending=0;}
 function sound(kind){if(settings.voice)void voice.tone(kind);}
 function startExercise(){
- if(!['cue','ready'].includes(session.state)||session.current.kind==='rest')return;
- cancel();session.state='running';session.reason='';lastTick=performance.now();
+ if(!session.startPrepared())return;
+ cancel();lastTick=performance.now();
  render();save();void acquireWake();void say(['start'],'开始。');sound('start');
 }
 function announceRemaining(before=Infinity){
@@ -356,9 +359,7 @@ function announceRemaining(before=Infinity){
   void say([id],window.RECOVERY_AUDIO.clips[id]?.text||'还剩十五秒休息。');
  }
  else if(seconds===30&&session.phaseSeconds>=40){announced.add(seconds);void say(['remaining_30'],'还剩三十秒。');}
- else if(settings.solo&&session.current.kind!=='rest'&&seconds===10){announced.add(seconds);void say(['solo_ten'],'还有十秒。');}
- else if(settings.voiceControl&&session.current.kind!=='rest'&&seconds===10){announced.add(seconds);void say(['solo_ten'],'还有十秒。');}
- else if(!settings.solo&&!settings.voiceControl&&session.current.kind!=='rest'&&seconds>=1&&seconds<=10){announced.add(seconds);void say(['count_'+seconds],String(seconds),false,1);}
+ else if(session.current.exercise!==1&&session.current.kind!=='rest'&&seconds===10&&session.phaseSeconds>10){announced.add(seconds);void say(['solo_ten'],'还有十秒。');}
 }
 let wakePending=false,wakeRetryAt=0,compatWake=null,compatActive=false;
 function needsWake(){return session.isActive&&!document.hidden;}
@@ -391,43 +392,15 @@ async function acquireWake(){
  finally{wakePending=false;wakeRetryAt=performance.now()+10000;}
 }
 function releaseWake(){wakeGeneration++;const lock=wake;wake=null;if(lock)lock.release().catch(()=>{});if(compatWake)compatWake.pause();compatActive=false;wakeNotice('');}
-function cue(full=false){
- const p=session.current,ids=[];
- if(settings.solo){
-  const prev=session.plan[session.index-1];
-  if(p.kind==='prep'){
-   if(session.index===0&&session.reason!=='resume')ids.push('solo_intro');
-   if(prev?.kind==='rest')ids.push('rest_ended');
-   if(p.targetKind!=='up')ids.push('group_'+p.round);
-   ids.push('solo_prep_'+p.targetKind);
-  }else if(p.kind==='lower')ids.push('solo_lower');
-  else if(p.kind==='rest')ids.push('solo_rest');
-  else ids.push(p.kind==='lift'?'solo_hold':'solo_'+p.kind);
-  if(!['prep','lower'].includes(p.kind)){const seconds=Math.ceil(session.remainingMs/1000);ids.push(window.RECOVERY_AUDIO.clips['duration_'+seconds]?'duration_'+seconds:'custom_duration');}
-  return {ids,text:ids.map(id=>window.RECOVERY_AUDIO.clips[id]?.text||'').join('')};
- }
-
- if(settings.voiceControl&&p.kind==='lift')return {ids:[...(p.round===1?['lift']:['group_'+p.round]),'voice_ready'],text:'左手缓慢托起右手，到额头的位置。动作就位后，说开始。'};
- if(p.kind==='lift')return p.round===1?{ids:['lift','manual_ready'],text:'左手缓慢托起右手，到额头的位置。抬好后，点击开始计时。'}:{ids:['group_'+p.round],text:`第${p.round}组。`};
- if(p.kind==='rest'){
-  if(p.exercise!==0)return {ids:['rest_generic'],text:'这一组完成了，休息一下。'};
-  const key=p.round===p.rounds?'encourage_last':p.round*2===p.rounds?'encourage_half':p.round===3?'encourage_steady':null;
-  return {ids:['rest_short',...(key&&window.RECOVERY_AUDIO.clips[key]?[key]:[])],text:'这一组完成了，慢慢放下，休息一下。'};
- }
- if(p.round>1&&!full){
-  if(p.kind==='circle')return {ids:['group_'+p.round],text:`第${p.round}组。`};
-  if(p.kind==='lift')return {ids:['group_'+p.round],text:`第${p.round}组。`};
-  if(p.kind==='rest')return {ids:['rest_short'],text:'这一组完成了，慢慢放下，休息一下。'};
-  if(p.kind==='down')return {ids:['group_'+p.round,'down_short'],text:`第${p.round}组，手垂下。`};
-  if(p.kind==='up')return {ids:['up_short'],text:'抬起小臂。'};
- }
- const complete='phase_'+p.kind+'_'+(['lift','down'].includes(p.kind)?p.round+'_':'')+p.seconds;
- if(window.RECOVERY_AUDIO.clips[complete])return {ids:[complete],text:p.cue};
- if(p.kind==='lift')ids.push('round_'+p.round);
- if(p.kind==='down')ids.push('group_'+p.round);
- ids.push(p.kind);
- const duration='duration_'+p.seconds;if(window.RECOVERY_AUDIO.clips[duration])ids.push(duration);
- return {ids,text:p.cue};
+function cue(){
+ const p=session.current;
+ let ids=[];
+ if(p.kind==='lift')ids=p.round===1?['lift']:['group_'+p.round];
+ else if(p.kind==='rest')ids=p.exercise===0?['rest_short']:['rest_generic'];
+ else if(p.kind==='down')ids=!session.elbowContinuous?['down']:['group_'+p.round,'down_short'];
+ else if(p.kind==='up')ids=['up_short'];
+ else if(p.kind==='circle')ids=p.round===1?['circle']:['group_'+p.round];
+ return {ids,text:ids.map(id=>window.RECOVERY_AUDIO.clips[id]?.text||'').join('')};
 }
 async function runCue(){
  if(session.state!=='cue')return;
@@ -439,8 +412,9 @@ async function runCue(){
  if(token!==epoch||session.state!=='cue')return;
  if(settings.solo&&!succeeded){pause(false);session.reason='audio';$('audioError').hidden=false;save();return;}
  if(document.hidden){pause(false);return;}
- if(!settings.solo&&session.current.kind!=='rest'){session.state='ready';render();if(settings.voiceControl)$('voiceCaption').textContent='动作就位后，说「开始」计时。';save();return;}
- session.cueFinished();lastTick=performance.now();render();save();announceRemaining();
+ session.cueFinished();lastTick=performance.now();render();save();
+ if(session.state==='ready')return;
+ announceRemaining();
  if(extraPending)flushExtra();
 }
 function pause(announce=true){
@@ -457,12 +431,7 @@ function transition(event){
  cancel();lastTick=performance.now();render();save();
  if(event==='cue')void runCue();
  else if(event==='between'){
-  if(settings.voiceControl){session.start();void runCue();return;}
-  void acquireWake();const previous=session.plan[session.index-1];
-  const ids=previous?.kind==='lift'?['lower']:[];
-  ids.push(previous?.kind==='rest'?(session.current.exercise===1?'ready_1':'ready_rest_circle'):(session.current.exercise===1?'ready_lift':'ready_2'));
-  void say(ids,session.current.exercise===1?'休息结束，接下来做小臂练习。':'小臂练习完成了，接下来做转圈练习。');
-  sound('done');
+  session.start();void runCue();return;
  }else if(event==='done'){
   releaseWake();const ids=settings.solo?['solo_done']:session.current.kind==='lift'?['lower','done']:['done'];
   void say(ids,session.current.kind==='lift'?'用左手托住右手，慢慢放下来。完成。':'完成。');
@@ -540,10 +509,9 @@ function render(){
  $('round').textContent=session.state==='done'?'':p.round+' / '+p.rounds;
  if(p.kind==='prep'&&session.state!=='done')$('phase').textContent=({lift:'准备抬手',down:'准备垂下手',up:'准备抬起小臂',circle:'准备转圈'})[p.targetKind];
  $('status').textContent=session.reason==='audio'?'语音中断 · 已暂停':states[session.state];
- if(['idle','done'].includes(session.state))$('voiceCaption').textContent=session.state==='done'?'本次练习完成。':settings.solo?'点击一次开始，按语音提示完成动作、休息和后续练习。':settings.voiceControl?'开启声控，听完提示后说「开始」。':'就位后手动开始计时。';
- $('voiceControls').hidden=!settings.voiceControl;
- $('modeHint').textContent=settings.voiceControl?'动作就位后说「开始」，练习中说「暂停」，暂停后说「继续」。播报时暂不听取口令，屏幕按钮始终可用；请保持网页在前台。':settings.solo?'语音自动引导 · 抬手就位 15 秒 · 其他就位 5 秒。放下手臂另留 10 秒；保持网页在前台。':'抬好或就位后，点击开始计时。练习中先暂停，再切换模式。';
- for(const [id,solo] of [['soloMode',true],['assistedMode',false]]){const b=$(id);b.setAttribute('aria-pressed',String(settings.voiceControl===solo));b.disabled=['cue','ready','running'].includes(session.state);}
+ if(['idle','done'].includes(session.state))$('voiceCaption').textContent=session.state==='done'?'本次练习完成。':session.current.exercise===1?'启动后连续完成全部组数。':'动作就位后开始计时。';
+ $('modeHint').textContent=settings.voiceControl?'声控：开始 / 暂停 / 继续 · 播报结束后聆听':'';
+ $('modeHint').hidden=!settings.voiceControl;
 
  const next=session.plan[session.index+1];
  $('next').textContent=next&&session.state!=='done'?(rest?(next.exercise===p.exercise?'休息后 · 第 '+next.round+' 组':'休息后 · '+(['抬手练习','小臂练习','转圈练习'][next.exercise])):next.kind==='rest'?'做完后 · 休息':'接下来 · '+labels[next.kind]):'';
@@ -560,12 +528,6 @@ function render(){
  renderTime();
 }
 $('primary').addEventListener('click',primary);
-function setMode(solo){
- if(settings.voiceControl===solo||['cue','ready','running'].includes(session.state))return;
- commands.disable();settings={...settings,solo:false,voiceControl:solo,voice:true};reset();if(solo)void enableCommands();
-}
-$('soloMode').addEventListener('click',()=>setMode(true));
-$('assistedMode').addEventListener('click',()=>setMode(false));
 $('add').addEventListener('click',addRest);
 $('nextRound').addEventListener('click',()=>jump(session.nextRoundIndex()));
 $('previousRound').addEventListener('click',()=>jump(session.previousRoundIndex()));
