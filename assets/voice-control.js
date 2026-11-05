@@ -24,7 +24,7 @@ async function downloadModel(signal,report){
 }
 class VoiceControl{
  constructor({onCommand,onStatus,blocked,onFailure,onProgress=()=>{}}){
-  Object.assign(this,{onCommand,onStatus,blocked,onFailure,onProgress});this.active=false;this.loading=false;this.generation=0;this.status='声控未开启';this.model=null;this.rec=null;this.cooldown=0;this.lastWord='';this.lastAt=0;this.fileMode=false;
+  Object.assign(this,{onCommand,onStatus,blocked,onFailure,onProgress});this.active=false;this.loading=false;this.generation=0;this.status='声控未开启';this.model=null;this.rec=null;this.cooldown=0;this.lastWord='';this.lastAt=0;this.fileMode=false;this.pendingAudio=[];
  }
  notify(text){if(this.status!==text){this.status=text;this.onStatus(text);}}
  async enable({file=false}={}){
@@ -70,7 +70,7 @@ class VoiceControl{
  }
  newRecognizer(){
   this.rec?.remove();if(!this.active||!this.model?.ready){this.rec=null;return;}
-  const rec=new this.model.KaldiRecognizer(16000,JSON.stringify([...WORDS,'<UNK>']));this.rec=rec;
+  const rec=new this.model.KaldiRecognizer(16000,JSON.stringify([...WORDS,'不要 开始','不要 暂停','不要 继续','不用 开始','不用 暂停','不用 继续','暂时 不用','还 没 准备 好','今天 吃 什么','现在 几点 了','喝 点 水 吧','继续 聊天','<UNK>']));this.rec=rec;
   rec.setWords(true);rec.on('result',m=>{
    if(rec!==this.rec||!this.active||this.blocked()||performance.now()<this.cooldown)return;
    const word=(m.result.text||'').replace(/[\s，。！？,.!?]/g,'');
@@ -82,20 +82,23 @@ class VoiceControl{
  feed(samples,rate){
   if(!this.active)return;
   if(this.blocked()){
-   this.cooldown=performance.now()+450;
+   this.cooldown=performance.now()+450;this.pendingAudio=[];
    if(this.rec){this.rec.remove();this.rec=null;}
    this.notify('正在播报，结束后可说口令');return;
   }
+  // Keep the beginning of a short command spoken immediately after the prompt.
+  // Audio recorded while the prompt itself plays is still discarded above.
+  this.pendingAudio.push({samples:new Float32Array(samples),rate});
   if(performance.now()<this.cooldown)return;
   if(!this.rec)this.newRecognizer();
   this.notify('正在聆听：开始 / 暂停 / 继续');
-  try{this.rec.acceptWaveformFloat(new Float32Array(samples),rate);}catch(e){this.lastError=e.message;console.error('Voice input failed',e);this.fail('声控处理出错，请重新开启');}
+  try{const pending=this.pendingAudio;this.pendingAudio=[];for(const chunk of pending)this.rec.acceptWaveformFloat(chunk.samples,chunk.rate);}catch(e){this.lastError=e.message;console.error('Voice input failed',e);this.fail('声控处理出错，请重新开启');}
  }
  resumeAudio(){if(this.ctx?.state==='suspended')void this.ctx.resume().catch(()=>{});}
- interrupt(){this.cooldown=performance.now()+450;if(this.rec){this.rec.remove();this.rec=null;}}
+ interrupt(){this.pendingAudio=[];this.cooldown=performance.now()+450;if(this.rec){this.rec.remove();this.rec=null;}}
  fail(message){this.disable();if(this.model){this.model.terminate();this.model=null;}this.notify(message);this.onFailure(message);}
  disable(){
-  this.downloadAbort?.abort();this.onProgress(null);
+  this.pendingAudio=[];this.downloadAbort?.abort();this.onProgress(null);
   this.generation++;this.active=false;if(this.loading&&this.model){this.model.terminate();this.model=null;}this.loading=false;this.rec?.remove();this.rec=null;
   if(this.processor){this.processor.onaudioprocess=null;this.processor.disconnect();this.processor=null;}
   this.source?.disconnect();this.source=null;this.silent?.disconnect();this.silent=null;

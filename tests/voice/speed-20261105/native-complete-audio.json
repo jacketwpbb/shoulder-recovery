@@ -1,0 +1,386 @@
+[
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-0-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-0-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-0-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-35-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-70-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-35-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-70-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-35-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-70-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-100-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-100-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-100-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-0-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-0-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-0-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-35-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-70-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-35-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-35-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-70-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-100-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-100-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-70-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-100-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-0-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-0-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-0-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-35-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-70-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-70-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-35-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-35-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-100-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-100-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-100-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-70-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-0-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-0-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-0-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-35-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-35-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-70-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-35-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-70-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-100-1.mp3",
+    "recognized": "暂停",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-100-0.mp3",
+    "recognized": "开始",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-70-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-100-2.mp3",
+    "recognized": "继续",
+    "ok": true
+  }
+]

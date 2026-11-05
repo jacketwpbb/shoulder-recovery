@@ -1,0 +1,457 @@
+[
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-0-2.mp3",
+    "sha256": "946837c50a3e2b8a119dd88699b4e179d14e0471fce7a84b66bf94124450478a"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-0-1.mp3",
+    "sha256": "6597da0285b76cdd74c697254bd997ca3cb6197812a5fd5f53b1d7c7166f59d8"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-0-0.mp3",
+    "sha256": "5d6dc944faf3a80e7f92a89d8494524a29a3039513e16c28d2dadc2e07abec7b"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-35-0.mp3",
+    "sha256": "66c25216b4f4ef04d3f8f94684e2b29b31ac07d9c07c4544e14f2746b0e317dc"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-70-1.mp3",
+    "sha256": "b1d0c9f1f7213fb51ca7150c8b4d6b6fa765c977ae33240c6693e6e2b8b3e87c"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-35-2.mp3",
+    "sha256": "520f4e353ab22f3a3af002a365e3aecfe2499de4606868eef934ae9c068b397a"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-70-0.mp3",
+    "sha256": "f8ec4bdf90d6f8aeb0d82403fa00dd4b42f8be1fed14215a078e29f62a6883a8"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-35-1.mp3",
+    "sha256": "b437ee1271e0f3f8d432668da5293c11b070198a5f574a0843efebb05fd797ae"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-70-2.mp3",
+    "sha256": "aa1ca7b262647799d44b02e00f028d6bb496ba93cc5f4aa92cbf040d94515f04"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-XiaoxiaoNeural-100-2.mp3",
+    "sha256": "2d4f92cf56774ef50882e443ff75e9f2592d854580ef4b59e5b0fc97cd87bc95"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-XiaoxiaoNeural-100-0.mp3",
+    "sha256": "ad0ec66896d232305f2e938aa291b7911ac2ff880fc319cd2a7038aab0c5dce3"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-XiaoxiaoNeural-100-1.mp3",
+    "sha256": "013a7064254cdf6df542a3c6a0d3a79c34b96a00e3049fdef98522b3079fa598"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-0-1.mp3",
+    "sha256": "d82ccdc9e4d7cbd04a01f05cb0eaee32d6fffcb63dff0dcc4014c624a5c5e6db"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-0-2.mp3",
+    "sha256": "f2e8921a2184b82dcbb81e0b1b0eb345ba737398e179218206f0071fa53a4946"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-0-0.mp3",
+    "sha256": "780d857d32beaffdcb1266b3783423f4b339d3b67b1e5750fa1c2ce8df3a7d1e"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-35-0.mp3",
+    "sha256": "54fadc396a5dda6c4179709ec3d40c40138baab73a7ed0eb1f8d3a989e84305c"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-70-1.mp3",
+    "sha256": "f8c343b1f13248ae8ab920b98f148d14e8688b945e105bfbe6b121ec2b839c8b"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-35-1.mp3",
+    "sha256": "28aa5a877bddbee05695e06868a8ec77d92a592fde78d8e448ce786f037b69c8"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-35-2.mp3",
+    "sha256": "8bf101453791b86cc9b80c5e6ffe7b680108afa4cb9665373f020a999553581d"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-70-0.mp3",
+    "sha256": "57469655b3370cb4ebebe9dfe64ae418eb4aba239e8b8d72f8ca80cd997e3baf"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-XiaoyiNeural-100-1.mp3",
+    "sha256": "d907b95b9f2983b5a08504a1627538b6c65c6ef9cfcd16bb1e3423d44c017ccc"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-XiaoyiNeural-100-0.mp3",
+    "sha256": "54c4216ddaaaa701ff8f854f046c7fba0ac274b4edafcd196b32bd3357ab2787"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-70-2.mp3",
+    "sha256": "9b91059bef53e8d66e554a8844ff5495df8d48e36c6b7bf860ea50a20f329d50"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-XiaoyiNeural-100-2.mp3",
+    "sha256": "118914d917264ebcd4c3be4f18bbe5771062e2f2bbec1611a7c627644fd07699"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-0-1.mp3",
+    "sha256": "db4e52c66708aae9c0d204fcbe6a59d2b56149170a25af8843b587da82edae35"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-0-0.mp3",
+    "sha256": "e6e0d894d8e9d651a22a94345434c3089de8bf9f48e97a7411d0badbc3a7afd6"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-0-2.mp3",
+    "sha256": "f6dc07a2cb0189da1c33eca91f03542b14e5893486aa67e89a8ae6f12633c667"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-35-0.mp3",
+    "sha256": "40607cdac2d5c01bbe03d9aa0a992a60be30d029955f3ee7c3d86eb6e7a084dc"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-70-1.mp3",
+    "sha256": "50ef4c4f7bb136d0d523a2b2ab0cfd93b347bbaeafa3d1e22b971da50c6dbd83"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-70-0.mp3",
+    "sha256": "cd10847772132f2b3d3f42df3bfad1775ef7e5d7adcbd3624df6eac4225989da"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-35-2.mp3",
+    "sha256": "e51da38c6eb3a1327e1ee5538cccd55bcd2b161f3a94be1137598504f5040948"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-35-1.mp3",
+    "sha256": "8ccc3ce98df409362d7c49651bfbb7dfa1d81ed37253f4f8a0081cca65e79d75"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-100-2.mp3",
+    "sha256": "2946b736efb974019d32deae21cfc940f24d6900a7ffc71046c511142ac1aa6f"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-YunxiNeural-100-1.mp3",
+    "sha256": "b5c8822f934b8e7d8181fe0251fd0268459d37d74d5d92488e18160db0c56953"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-YunxiNeural-100-0.mp3",
+    "sha256": "121c7485adbf6fa29588ca71b6e28f617f1cb8a8eace40579feaea231cbf898e"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-YunxiNeural-70-2.mp3",
+    "sha256": "3d80e828b25e207620acce2fc4d45aabbbe018e11fd1d832386d6781a7990075"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 0,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-0-2.mp3",
+    "sha256": "2c82ba14481ab57a9809c639054a4c795f7e4a967ef351d4be12cbb0f4763c51"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 0,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-0-0.mp3",
+    "sha256": "b1d2e15ad78d405eb8c975b46a2e4a8bec465c4763855e6f90a877627aaba7a5"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 0,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-0-1.mp3",
+    "sha256": "8ad33e2254e6be685d17af0fea424adce0a9b3e242235a9b8dd8bbbd142c70fb"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 35,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-35-0.mp3",
+    "sha256": "30688e7091675daad590d11c72d744bde56062e7e80392e3ac462b0abee84217"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 35,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-35-2.mp3",
+    "sha256": "f284f3478e922aa1cf57894ca577c13a23a80c29e58855d87722cab9d74ea67d"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 70,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-70-1.mp3",
+    "sha256": "a81870fa67f488797e92af6e20adfe343db2355f71be905836bf178a1cd039a8"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 35,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-35-1.mp3",
+    "sha256": "05a0be3a491c1670f679ec434e4a58f4ced7c70b5999ace206064474b06225ad"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 70,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-70-0.mp3",
+    "sha256": "436f0db586f7d29669a435d6bbe80088fa3a05e3a83aa174fae19aba0a2390f8"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 100,
+    "text": "暂停",
+    "file": "zh-CN-YunjianNeural-100-1.mp3",
+    "sha256": "d61c5348c4fa94f2691c73c29adc50109a34e03d16eb8dc6d22e0c87cabdfd0c"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 100,
+    "text": "开始",
+    "file": "zh-CN-YunjianNeural-100-0.mp3",
+    "sha256": "a97cc78d4ccc7af650351401e3795d5f8f6f452de7e09273652a53356300b765"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 70,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-70-2.mp3",
+    "sha256": "b4042cfd6806d72acea9f81de38a347147f31bd45b72478e687e1f7627be6dd6"
+  },
+  {
+    "voice": "zh-CN-YunjianNeural",
+    "rate": 100,
+    "text": "继续",
+    "file": "zh-CN-YunjianNeural-100-2.mp3",
+    "sha256": "3bd9a8e7c85a104ea87e752db6e1804f8ee31a4e0954f32b3e6c4878c585c2fe"
+  },
+  {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": 0,
+    "text": "本次练习完成，可以刷牙了。",
+    "file": "done-brush.mp3",
+    "sha256": "f22163f053a63b54a8f354f56f5a0f4131f28f6304b450eaadb4306ab17ce075"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "暂时不用",
+    "file": "negative-0-2.mp3",
+    "sha256": "55583973760e4c6acd3ddda70098810d80383e06f1019b131beee62397ed3b8f"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "不要暂停",
+    "file": "negative-0-1.mp3",
+    "sha256": "5ce978d55abae836dc4826caff8785d9e24d52241b2068183ad4a4fbb51adf10"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "继续聊天",
+    "file": "negative-0-3.mp3",
+    "sha256": "b0c0a118b3d130c7b0c673d049c5d277dcfe191baf503baa0504f8f3a86056d8"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "今天吃什么",
+    "file": "negative-0-0.mp3",
+    "sha256": "c14f19b005281f6c845eca1dbccfbc9c62b6c05fd67b0921ba78f0d071fa1011"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "暂时不用",
+    "file": "negative-1-2.mp3",
+    "sha256": "a0235c0343f1740d8d0fc493b96043e2ae72fb3151373e0cc1b4e4539743176f"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "继续聊天",
+    "file": "negative-1-3.mp3",
+    "sha256": "2ef2302a0de8f83fc4afe9c56b318b045b6b4fee8608c0671b8e479c53904bea"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "不要暂停",
+    "file": "negative-1-1.mp3",
+    "sha256": "a93188044ec45082de09730b70d28b837317b97acebb64dbef90d7339b1d918e"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "今天吃什么",
+    "file": "negative-1-0.mp3",
+    "sha256": "053650928c5c21aad3e75d56389f018cf0333191f33459bab6976f3b24b22392"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "喝点水吧",
+    "file": "holdout-0-3.mp3",
+    "sha256": "dbbabac0119c41bd969b397ac756b650833fea72b28f8102b7ac54d1e5b485f6"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "不用继续",
+    "file": "holdout-0-1.mp3",
+    "sha256": "fde59cb92f46c4206d3c125b3b49ccb05f1df9f82f8672e0461e52e3dec91dcc"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "不要开始",
+    "file": "holdout-0-0.mp3",
+    "sha256": "087bddc21ab4ffa9d51183f1d47c8524190b1d5d191fc8bf2f5573f8df8e14aa"
+  },
+  {
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": 70,
+    "text": "现在几点了",
+    "file": "holdout-0-2.mp3",
+    "sha256": "d7985a257aa65c9398dc8e8beb7d8b9d6200d8a8b18fcf886474852f4fbde886"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "现在几点了",
+    "file": "holdout-1-2.mp3",
+    "sha256": "7016fa5501069f680a85cdec3bf41966c60b3948050c3821c1fc9e16df5bc383"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "不要开始",
+    "file": "holdout-1-0.mp3",
+    "sha256": "bcc759c8e1144effb474b9dd46c63ed9e9fbc9f53ac4e4a9c7fa3a803c1b30df"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "不用继续",
+    "file": "holdout-1-1.mp3",
+    "sha256": "4d61361a2e3a373dc55341f68dc2f1653f6bd75c5bd082842262e41f814ffe41"
+  },
+  {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": 70,
+    "text": "喝点水吧",
+    "file": "holdout-1-3.mp3",
+    "sha256": "aaf9ae90432203787f67f3a77b9e9a6c986df683f433ea7f87ce51c5fa1d01d4"
+  }
+]
