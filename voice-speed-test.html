@@ -179,7 +179,7 @@ class VoiceControl{
  }
  newRecognizer(){
   this.rec?.remove();if(!this.active||!this.model?.ready){this.rec=null;return;}
-  const rec=new this.model.KaldiRecognizer(16000,JSON.stringify([...WORDS,'<UNK>']));this.rec=rec;
+  const rec=new this.model.KaldiRecognizer(16000,JSON.stringify([...WORDS,'不要 开始','不要 暂停','不要 继续','不用 开始','不用 暂停','不用 继续','暂时 不用','还 没 准备 好','今天 吃 什么','现在 几点 了','喝 点 水 吧','继续 聊天','<UNK>']));this.rec=rec;
   rec.setWords(true);rec.on('result',m=>{
    if(rec!==this.rec||!this.active||this.blocked()||performance.now()<this.cooldown)return;
    const word=(m.result.text||'').replace(/[\s，。！？,.!?]/g,'');
@@ -225,12 +225,12 @@ $('run').onclick=async()=>{
  try{
  const fixtures=JSON.parse(await $('files').files[0].text());ctx=new AudioContext({sampleRate:16000});await ctx.resume();
  let oldWords=[],newWords=[];
- const config={blocked:()=>false,onFailure:m=>{throw Error(m)},onStatus:s=>$('status').textContent=s};
+ const config={blocked:()=>false,onFailure:m=>{throw Error(m)},onStatus:s=>{if(!rows.length)$('status').textContent=s;}};
  old=new Baseline({...config,onCommand:w=>oldWords.push(w)});await old.enable({file:true});if(!old.active)throw Error(old.status);
  fresh=new RecoveryVoiceControl({...config,onCommand:w=>newWords.push(w)});fresh.model=old.model;await fresh.enable({file:true});
  for(const f of fixtures){
   const buffer=await ctx.decodeAudioData(Uint8Array.from(atob(f.data),c=>c.charCodeAt(0)).buffer),raw=buffer.getChannelData(0);
-  let first=0;while(first<raw.length&&Math.abs(raw[first])<.02)first++;first=Math.max(0,first-640);
+  let first=0;while(first<raw.length&&Math.abs(raw[first])<.02)first++;first=Math.max(0,first-1600);
   const samples=new Float32Array(raw.length-first+24000);samples.set(raw.slice(first));
   oldWords=[];newWords=[];old.lastWord=fresh.lastWord='';old.interrupt();fresh.interrupt();
   const start=performance.now();
