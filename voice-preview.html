@@ -277,7 +277,7 @@ class RecoveryMusic{
 }
 root.RecoveryMusic=RecoveryMusic;
 })(window);
-</script><script src="assets/voice-done-brush.js"></script><script src="assets/voice-control.js?v=20261105-buffered-commands"></script><script>(function(){
+</script><script src="assets/voice-done-brush.js"></script><script src="assets/voice-control.js?v=20261107-sherpa-kws"></script><script>(function(){
 'use strict';
 const C=window.RecoveryCore,Session=window.RecoverySession,$=id=>document.getElementById(id);
 const SETTINGS='slow-recovery-settings-v2',PROGRESS='slow-recovery-session-v2';
@@ -329,8 +329,7 @@ const commands=new window.RecoveryVoiceControl({
   const before=session.state,remaining=session.remainingMs;
   if(word==='开始'&&session.state==='ready')startExercise();
   else if(word==='开始'&&['idle','between'].includes(session.state))primary();
-  else if(word==='暂停'&&['running','cue','ready'].includes(session.state))pause();
-  else if((word==='继续'||word==='开始')&&session.state==='paused')primary();
+  else if(word==='开始'&&session.state==='paused')primary();
   voiceTestObserver?.({word,before,after:session.state,remainingBefore:remaining,remainingAfter:session.remainingMs,result});
  }
 });
@@ -511,7 +510,7 @@ function render(){
  if(p.kind==='prep'&&session.state!=='done')$('phase').textContent=({lift:'准备抬手',down:'准备垂下手',up:'准备抬起小臂',circle:'准备转圈'})[p.targetKind];
  $('status').textContent=session.reason==='audio'?'语音中断 · 已暂停':states[session.state];
  if(['idle','done'].includes(session.state))$('voiceCaption').textContent=session.state==='done'?'本次练习完成，可以刷牙了。':session.current.exercise===1?'启动后连续完成全部组数。':'动作就位后开始计时。';
- $('modeHint').textContent=settings.voiceControl?'声控：开始 / 暂停 / 继续 · 播报结束后聆听':'';
+ $('modeHint').textContent=settings.voiceControl?'说“开始计时”即可开始或接着计时 · 暂停请点按钮':'';
  $('modeHint').hidden=!settings.voiceControl;
 
  const next=session.plan[session.index+1];

@@ -1,0 +1,1142 @@
+{
+  "tuning": [
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 0,
+      "text": "开始开始",
+      "file": "positive-zh-CN-XiaoxiaoNeural-0-0.mp3",
+      "kind": "positive",
+      "sha256": "8bf0c2195c28d2a4f8b565c1546bbe9e6f9cb540dee0ac9e0f4d378eb6021c59"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 0,
+      "text": "你好小康",
+      "file": "positive-zh-CN-XiaoxiaoNeural-0-1.mp3",
+      "kind": "positive",
+      "sha256": "9e6ccafde5104c3b5678a0ccdf85e894eff615d4f74ceeb2a0348f9f1e98a8dc"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 0,
+      "text": "小康开始",
+      "file": "positive-zh-CN-XiaoxiaoNeural-0-2.mp3",
+      "kind": "positive",
+      "sha256": "dd553d7d1e2869e1dcbc438bbbc7cc0751d764bbed2a05daa24f4dad52980d03"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 0,
+      "text": "开始训练",
+      "file": "positive-zh-CN-XiaoxiaoNeural-0-3.mp3",
+      "kind": "positive",
+      "sha256": "f6ea71a0636571004ee4b52e4b4eba3efd89dc7e1c10b6bb960240a94fee6725"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 40,
+      "text": "开始开始",
+      "file": "positive-zh-CN-XiaoxiaoNeural-40-0.mp3",
+      "kind": "positive",
+      "sha256": "84e2e1a7c93c5e87a53383dee7800d94807a35b69a853279b6806142512d4993"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 40,
+      "text": "你好小康",
+      "file": "positive-zh-CN-XiaoxiaoNeural-40-1.mp3",
+      "kind": "positive",
+      "sha256": "436c0bfdeee01ebea16b30444c3c4b4e56b4d0207abd907d9b62a8dd0c36a183"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 40,
+      "text": "小康开始",
+      "file": "positive-zh-CN-XiaoxiaoNeural-40-2.mp3",
+      "kind": "positive",
+      "sha256": "96f7a23fef3343c1469f16bc6c8b6ca3bfb3188dae7d84ce49cb5419b2228082"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 40,
+      "text": "开始训练",
+      "file": "positive-zh-CN-XiaoxiaoNeural-40-3.mp3",
+      "kind": "positive",
+      "sha256": "e7753ee85a5d586b31029591748599ce880ff4b5d2c56a4263d1df3e7f371f66"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 80,
+      "text": "开始开始",
+      "file": "positive-zh-CN-XiaoxiaoNeural-80-0.mp3",
+      "kind": "positive",
+      "sha256": "89f20c33935060dabd4af717dbe241594ac8809db323abf456cd93b92406a904"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 80,
+      "text": "你好小康",
+      "file": "positive-zh-CN-XiaoxiaoNeural-80-1.mp3",
+      "kind": "positive",
+      "sha256": "2e45120297bdda3b0f1b58826a0f3fad929ed90860cb6d3a1c2fc62f02bd91e8"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 80,
+      "text": "小康开始",
+      "file": "positive-zh-CN-XiaoxiaoNeural-80-2.mp3",
+      "kind": "positive",
+      "sha256": "8853004121051993eef3540caf5f2d39015170d510571e3403f017351ad79954"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 80,
+      "text": "开始训练",
+      "file": "positive-zh-CN-XiaoxiaoNeural-80-3.mp3",
+      "kind": "positive",
+      "sha256": "e49b52ecdbafe17c2de28cbfc74c83fef781e2c4db1f53792229d45ddff639af"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 0,
+      "text": "开始开始",
+      "file": "positive-zh-CN-XiaoyiNeural-0-0.mp3",
+      "kind": "positive",
+      "sha256": "75f4258358a5829fb2a7908dc6604118bd0bfe5a8fa46e4c8ee20300ad25183e"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 0,
+      "text": "你好小康",
+      "file": "positive-zh-CN-XiaoyiNeural-0-1.mp3",
+      "kind": "positive",
+      "sha256": "e75fc0050f5a0d3625a1a455a9510c753baa32ccd173bbc9239527a97bf77269"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 0,
+      "text": "小康开始",
+      "file": "positive-zh-CN-XiaoyiNeural-0-2.mp3",
+      "kind": "positive",
+      "sha256": "2a764589f76a42127685afdee642817d6efd1a932b618052c512f3a47836b7ee"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 0,
+      "text": "开始训练",
+      "file": "positive-zh-CN-XiaoyiNeural-0-3.mp3",
+      "kind": "positive",
+      "sha256": "a1dedeaf2232079ba9356a0cd09a7ff5e82b6f7745f1bba4a55679e3ea2be72a"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 80,
+      "text": "开始计时",
+      "file": "positive-zh-CN-XiaoxiaoNeural-80-4.mp3",
+      "kind": "positive",
+      "sha256": "ac667e1f052ab76cd35d38061859cd66ccbaf39972f9c75e211c938bae108fb0"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始开始",
+      "file": "positive-zh-CN-XiaoyiNeural-40-0.mp3",
+      "kind": "positive",
+      "sha256": "2fc06c640fb3c63242674452fb42eeb28f5a14d223ee96537d4e1a98c229b16f"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "你好小康",
+      "file": "positive-zh-CN-XiaoyiNeural-40-1.mp3",
+      "kind": "positive",
+      "sha256": "20445f42ced415b0b12951b142b86da20730bd2b6b71ea3d494e25ad403a8e56"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "小康开始",
+      "file": "positive-zh-CN-XiaoyiNeural-40-2.mp3",
+      "kind": "positive",
+      "sha256": "9bff8fdeed96df4a0e47d57a8591283dd8ed368a57d42fcaf7258c5abcde42eb"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始训练",
+      "file": "positive-zh-CN-XiaoyiNeural-40-3.mp3",
+      "kind": "positive",
+      "sha256": "5e404f05b22ad72c2bf1f5f9885c3ad58fa74bf09e313b72a48222dba2a3d035"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 40,
+      "text": "开始计时",
+      "file": "positive-zh-CN-XiaoxiaoNeural-40-4.mp3",
+      "kind": "positive",
+      "sha256": "521e2c3dfe00bd50ab8f7b85834cebc8b78a052bb3e67c9c8aa521754056bfe6"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 80,
+      "text": "开始开始",
+      "file": "positive-zh-CN-XiaoyiNeural-80-0.mp3",
+      "kind": "positive",
+      "sha256": "6252cdc1a9d3f8e567d3cef8a8b589a98f289e22a7fa3b486fa07d11d93081fe"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 80,
+      "text": "你好小康",
+      "file": "positive-zh-CN-XiaoyiNeural-80-1.mp3",
+      "kind": "positive",
+      "sha256": "09417ecb967cf731b80d023060d11da06c997f8ce20292fda10270e7b8797adc"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 80,
+      "text": "小康开始",
+      "file": "positive-zh-CN-XiaoyiNeural-80-2.mp3",
+      "kind": "positive",
+      "sha256": "f3ab29b482f0fabe9e14172e7f113b21e6ae6cd90f11de61e3ea70d585096623"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 80,
+      "text": "开始训练",
+      "file": "positive-zh-CN-XiaoyiNeural-80-3.mp3",
+      "kind": "positive",
+      "sha256": "ae180399eab08dcccc19177dd9a0ac2156fe1ef00b649104ca1004cb9576d20d"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 0,
+      "text": "开始计时",
+      "file": "positive-zh-CN-XiaoxiaoNeural-0-4.mp3",
+      "kind": "positive",
+      "sha256": "3ac97c3458f6ec8f55a16f124e950e5710b80a6d5b90cab7ac90f7af5ee3b4bf"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 0,
+      "text": "开始开始",
+      "file": "positive-zh-CN-YunxiNeural-0-0.mp3",
+      "kind": "positive",
+      "sha256": "94dc3dd951038c14e5ebc2da8c275d8a1b72aa0c2cd071cd25b8127f675a4f21"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 0,
+      "text": "你好小康",
+      "file": "positive-zh-CN-YunxiNeural-0-1.mp3",
+      "kind": "positive",
+      "sha256": "7bff7ab3cd5b14e6dbe785538aa8420f21cfd9d3bdd6b976959a5fe35afd7847"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 0,
+      "text": "小康开始",
+      "file": "positive-zh-CN-YunxiNeural-0-2.mp3",
+      "kind": "positive",
+      "sha256": "40e88994a3c1255448b31bcca89349f200ddaf9384d5f96c753f33332020433c"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 0,
+      "text": "开始训练",
+      "file": "positive-zh-CN-YunxiNeural-0-3.mp3",
+      "kind": "positive",
+      "sha256": "3ff9879942d07b47683234ea5caa0b0165f61b9d63b1dee994b583282e24939a"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 0,
+      "text": "开始计时",
+      "file": "positive-zh-CN-XiaoyiNeural-0-4.mp3",
+      "kind": "positive",
+      "sha256": "0cf45339836e5832e71e6fcbd0f2dc84ddeab80b93f08890478eebd6801dd58b"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始开始",
+      "file": "positive-zh-CN-YunxiNeural-40-0.mp3",
+      "kind": "positive",
+      "sha256": "b1aea89306c1f39fea6f1de43fe66fa315a47e4c6dc868d9884361cade72d58c"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "你好小康",
+      "file": "positive-zh-CN-YunxiNeural-40-1.mp3",
+      "kind": "positive",
+      "sha256": "e3dbce96723b02881ae8249703e91b670debca0bb51155db9f52fe97b02c97cd"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "小康开始",
+      "file": "positive-zh-CN-YunxiNeural-40-2.mp3",
+      "kind": "positive",
+      "sha256": "2ffd0e43245965a4147b4cea708e5549b9698692d48aa946ddc2616a7f6ee49c"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始训练",
+      "file": "positive-zh-CN-YunxiNeural-40-3.mp3",
+      "kind": "positive",
+      "sha256": "c2ef65b3eb08fa2ca25ad5f6621016a24d354db5bce25bb7caabb08353ecead9"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始计时",
+      "file": "positive-zh-CN-YunxiNeural-40-4.mp3",
+      "kind": "positive",
+      "sha256": "d0529c9506cc2739ac42bac80abca6ae000484074ccffbee4215fc43149d4522"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 80,
+      "text": "开始开始",
+      "file": "positive-zh-CN-YunxiNeural-80-0.mp3",
+      "kind": "positive",
+      "sha256": "9c215643484e16d3f191afe88204a65ebbc09dd66f3af5720c24b9d57b6e6d6c"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 80,
+      "text": "你好小康",
+      "file": "positive-zh-CN-YunxiNeural-80-1.mp3",
+      "kind": "positive",
+      "sha256": "8c2bd02621cd4ce9ca3ca7925a1908ba6611dac298ec9afbc7daf379f80cb6ee"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 80,
+      "text": "小康开始",
+      "file": "positive-zh-CN-YunxiNeural-80-2.mp3",
+      "kind": "positive",
+      "sha256": "5cf03bb03d27b2dba3d8beb23f06fcc2b46154acc6840e6938abc7d278ffba3c"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 80,
+      "text": "开始训练",
+      "file": "positive-zh-CN-YunxiNeural-80-3.mp3",
+      "kind": "positive",
+      "sha256": "451c890bec56e01d1a02834ae4f3711599d580831f814780e452c462a7aafcd6"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 0,
+      "text": "开始计时",
+      "file": "positive-zh-CN-YunxiNeural-0-4.mp3",
+      "kind": "positive",
+      "sha256": "6a5712e3fe4b51df818a7a6d9ac8a31ab01001aff5229bf8a5cce11ec2e5d218"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 0,
+      "text": "开始开始",
+      "file": "positive-zh-CN-YunjianNeural-0-0.mp3",
+      "kind": "positive",
+      "sha256": "0065a3c8b0a2ee07f43331ce25c67663f3d5b1c9807800e29d915fe53df20e1f"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 0,
+      "text": "你好小康",
+      "file": "positive-zh-CN-YunjianNeural-0-1.mp3",
+      "kind": "positive",
+      "sha256": "6feef7e57020de7b7ed5f11334cfe8d18ae4345ad8fb180ed36f3e83010d9876"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 0,
+      "text": "小康开始",
+      "file": "positive-zh-CN-YunjianNeural-0-2.mp3",
+      "kind": "positive",
+      "sha256": "e8c77602780ab36e037ffdd4510ee65646fd12f907f42f893f219a04e1389bee"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 0,
+      "text": "开始训练",
+      "file": "positive-zh-CN-YunjianNeural-0-3.mp3",
+      "kind": "positive",
+      "sha256": "b328aea376223f607ad49a5170320cf5f631f017522232eb7ef86b3ca5a2aed6"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 80,
+      "text": "开始计时",
+      "file": "positive-zh-CN-XiaoyiNeural-80-4.mp3",
+      "kind": "positive",
+      "sha256": "d9262d590b5a4e943d1988696b6a1112efda1970574c7fdcea7dace05980c372"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 40,
+      "text": "开始开始",
+      "file": "positive-zh-CN-YunjianNeural-40-0.mp3",
+      "kind": "positive",
+      "sha256": "c3a3cfe5f00ff84b1b5a899c82ea176131c3a85afa342e664d4569c324976908"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 40,
+      "text": "你好小康",
+      "file": "positive-zh-CN-YunjianNeural-40-1.mp3",
+      "kind": "positive",
+      "sha256": "2e1c2da5b4421a615197e49491553ad197173d2afbda347661acd3a9dee633f9"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 40,
+      "text": "小康开始",
+      "file": "positive-zh-CN-YunjianNeural-40-2.mp3",
+      "kind": "positive",
+      "sha256": "963770e2e9a5c199ce5eb1ed1c9c6f6c24a9979640bff7cc86c3d231bb88e647"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 40,
+      "text": "开始训练",
+      "file": "positive-zh-CN-YunjianNeural-40-3.mp3",
+      "kind": "positive",
+      "sha256": "7ad12d189ab305d45a66ee1d76f6737fb66d6aa4e16ce456d5aa9bc3473599b3"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始计时",
+      "file": "positive-zh-CN-XiaoyiNeural-40-4.mp3",
+      "kind": "positive",
+      "sha256": "2977a6321af9cd941d62524413ede98f546847b33982d056d8a9b0143ef62552"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 80,
+      "text": "开始开始",
+      "file": "positive-zh-CN-YunjianNeural-80-0.mp3",
+      "kind": "positive",
+      "sha256": "a7d9ee5211c2bd2025f8265e50b24283c695828b2589fd1919a3289cd2522fe4"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 80,
+      "text": "你好小康",
+      "file": "positive-zh-CN-YunjianNeural-80-1.mp3",
+      "kind": "positive",
+      "sha256": "8c32ad2604d57ea5dd61d3277d11cdd47e4ce75dc4f45bfd7282aa88fcc150b4"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 80,
+      "text": "小康开始",
+      "file": "positive-zh-CN-YunjianNeural-80-2.mp3",
+      "kind": "positive",
+      "sha256": "67200d23248f56c813b4dbd76a435c70ab4105ca19e496ba63f324942362fbb1"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 80,
+      "text": "开始训练",
+      "file": "positive-zh-CN-YunjianNeural-80-3.mp3",
+      "kind": "positive",
+      "sha256": "4432bc86794fc5eea07b99391cea93f1ba0f8ee7de36a1f5211eaa3c2643069c"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 80,
+      "text": "开始计时",
+      "file": "positive-zh-CN-YunjianNeural-80-4.mp3",
+      "kind": "positive",
+      "sha256": "876436e04a01a5a2e4efddd3555cdb8775aa83b67e62e450c17413fd79546bd7"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始",
+      "file": "negative-zh-CN-XiaoyiNeural-40-0.mp3",
+      "kind": "negative",
+      "sha256": "16adcf09d6db4bec115715e5cc6a1312fcef03714d5682520767c1152360ecd4"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "暂停",
+      "file": "negative-zh-CN-XiaoyiNeural-40-1.mp3",
+      "kind": "negative",
+      "sha256": "eda7be126e368583dc5686147d5641dfbfdef73d66a7816829aeb06f88963743"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "继续",
+      "file": "negative-zh-CN-XiaoyiNeural-40-2.mp3",
+      "kind": "negative",
+      "sha256": "56df91a0cbe2722c49bfd15305f6e19f411ed9d46782d80c92906bb5573ecabc"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始开会",
+      "file": "negative-zh-CN-XiaoyiNeural-40-3.mp3",
+      "kind": "negative",
+      "sha256": "d1ac8d9c9e15a6760d118f90e3af6d80af88932fe907a01a4bed87aa3efa70e9"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开水开水",
+      "file": "negative-zh-CN-XiaoyiNeural-40-4.mp3",
+      "kind": "negative",
+      "sha256": "2bc6ea16a7215170b048d51c2239c7a30422a255929b6ac1f64fd092afa437c5"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开心开心",
+      "file": "negative-zh-CN-XiaoyiNeural-40-5.mp3",
+      "kind": "negative",
+      "sha256": "750d8ee2407ca80457eb2bc4065d9ae88efc1eec32bf63008e82a5cb3b10deeb"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始吃饭",
+      "file": "negative-zh-CN-XiaoyiNeural-40-6.mp3",
+      "kind": "negative",
+      "sha256": "cd6e324eb457449dc5e9cd7000a0c2b837b2a2c6a5ab760b5840975ed7cbb86b"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "重新开始",
+      "file": "negative-zh-CN-XiaoyiNeural-40-7.mp3",
+      "kind": "negative",
+      "sha256": "0417179835d2655d6b7199725654fb0d24ae210bbb5fe8ca3088c85a329bc308"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "你好小刚",
+      "file": "negative-zh-CN-XiaoyiNeural-40-8.mp3",
+      "kind": "negative",
+      "sha256": "6c7527a43c56b57f359fd749ef69fc85e8e1815789ceb6d5daa4e01a955a7dbf"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "现在几点了",
+      "file": "negative-zh-CN-XiaoyiNeural-40-9.mp3",
+      "kind": "negative",
+      "sha256": "5f96969b4d69b1d0db618c2eddb16a70b13f5a2d0af3a34d0bddca1fd0be39a1"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "我们出去走走",
+      "file": "negative-zh-CN-XiaoyiNeural-40-10.mp3",
+      "kind": "negative",
+      "sha256": "f521d73de3a570c4a16302b658b1ec025f11527217e8a0b51e0c06acd782c5df"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "本次练习完成，可以刷牙了。",
+      "file": "negative-zh-CN-XiaoyiNeural-40-11.mp3",
+      "kind": "negative",
+      "sha256": "09532d70bea68a78120024fa6dea1fe52c9e5587dde676bbe42ca9eb09c85112"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "抬起小臂，肩膀不动。",
+      "file": "negative-zh-CN-XiaoyiNeural-40-12.mp3",
+      "kind": "negative",
+      "sha256": "ab1a9f7916193ba9ca5092165c57d2a01a927f0ae9eb7f298266a2ecd6a11b31"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "还有十秒，准备下一组。",
+      "file": "negative-zh-CN-XiaoyiNeural-40-13.mp3",
+      "kind": "negative",
+      "sha256": "fd1e0e43ef0ff16f9cc802c0e7db8f5096983724d6a97ea24d37358703d27403"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "电视正在播放今天的新闻。",
+      "file": "negative-zh-CN-XiaoyiNeural-40-14.mp3",
+      "kind": "negative",
+      "sha256": "3f0ad6b602f48aa6d8e6b64fff6c57f2fb83314c467d749ed02d4366e1717290"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "今天吃什么，明天去哪里？",
+      "file": "negative-zh-CN-XiaoyiNeural-40-15.mp3",
+      "kind": "negative",
+      "sha256": "b2e34f3076273ab96aa5f5c0846f0de0f02eece291d1c59605dc7ac2b4280646"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始",
+      "file": "negative-zh-CN-YunxiNeural-40-0.mp3",
+      "kind": "negative",
+      "sha256": "fa7004f1180a6ac8acdf6a7f25d9bcea05089979596ecd358a69d1a06156e11d"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "暂停",
+      "file": "negative-zh-CN-YunxiNeural-40-1.mp3",
+      "kind": "negative",
+      "sha256": "561963c2b9e83f50376eab90647c01456b889e8ea03494d921ab863109c2d27a"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "继续",
+      "file": "negative-zh-CN-YunxiNeural-40-2.mp3",
+      "kind": "negative",
+      "sha256": "cb044e03726cbe4ddd8c031ab3da64bd45ec51e31289a3eabf0401849bfd07d1"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始开会",
+      "file": "negative-zh-CN-YunxiNeural-40-3.mp3",
+      "kind": "negative",
+      "sha256": "97b1ba281c775b0c7c657b6530e637bb2eefe854e460260db6c6fd353c243570"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开水开水",
+      "file": "negative-zh-CN-YunxiNeural-40-4.mp3",
+      "kind": "negative",
+      "sha256": "4cb0c3652201972510e263895d25b9330e77ec786cb58da1f59877c602650830"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开心开心",
+      "file": "negative-zh-CN-YunxiNeural-40-5.mp3",
+      "kind": "negative",
+      "sha256": "ca6c9954037649d25d4c261e08c4e5d1957b4e2ca3e083805a8b3990f083a0c1"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始吃饭",
+      "file": "negative-zh-CN-YunxiNeural-40-6.mp3",
+      "kind": "negative",
+      "sha256": "fa9af68342f26fda8a459057132fd48eaf479fdf65e3849fe0a2b1f14c0efcb6"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "重新开始",
+      "file": "negative-zh-CN-YunxiNeural-40-7.mp3",
+      "kind": "negative",
+      "sha256": "2e5ed30e8bf5349c777106f758f9374bcfc65dc357b3504e7940b2a96cb25f05"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "你好小刚",
+      "file": "negative-zh-CN-YunxiNeural-40-8.mp3",
+      "kind": "negative",
+      "sha256": "a0bb5a363112ea994679ed0fdec7b170286f0d3f048b3af90ac1c29aa0c53a2b"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "现在几点了",
+      "file": "negative-zh-CN-YunxiNeural-40-9.mp3",
+      "kind": "negative",
+      "sha256": "4fd014b59d242d798233bb32a1b76fafef7b466519af38da04cf1124fa83e0ce"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "我们出去走走",
+      "file": "negative-zh-CN-YunxiNeural-40-10.mp3",
+      "kind": "negative",
+      "sha256": "2e657b09ba00c050fbb44527a2137694d7114bacb946bfa5e46c5d914b48ab2a"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "本次练习完成，可以刷牙了。",
+      "file": "negative-zh-CN-YunxiNeural-40-11.mp3",
+      "kind": "negative",
+      "sha256": "e244e6abc10f4f96a7746e6539a32455fada7cbc71e4066e0ce0bf8444a015e7"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "抬起小臂，肩膀不动。",
+      "file": "negative-zh-CN-YunxiNeural-40-12.mp3",
+      "kind": "negative",
+      "sha256": "b88db19b212116b2e812855d8b4f8b682dafb90dbf5eb6aee6f02a9ccf341f51"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "还有十秒，准备下一组。",
+      "file": "negative-zh-CN-YunxiNeural-40-13.mp3",
+      "kind": "negative",
+      "sha256": "e6d671f464a1bdf3a87dd773d2d38f02e7343185980135b68bc88d1e1114398a"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "电视正在播放今天的新闻。",
+      "file": "negative-zh-CN-YunxiNeural-40-14.mp3",
+      "kind": "negative",
+      "sha256": "2a1e71ed83159b65acc5c5d19b0a887c6d1a1b9e7d06a2968735b7c3de10ce36"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "今天吃什么，明天去哪里？",
+      "file": "negative-zh-CN-YunxiNeural-40-15.mp3",
+      "kind": "negative",
+      "sha256": "fcc501175d09cdff924ee754810407bf1b2ea94917356af37867e9049cd45e02"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 0,
+      "text": "开始计时",
+      "file": "positive-zh-CN-YunjianNeural-0-4.mp3",
+      "kind": "positive",
+      "sha256": "e44b038eb0568e6a48d4af58e01ea8e742ae4be6d6f0aa044cf41c80fbe4559a"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 80,
+      "text": "开始计时",
+      "file": "positive-zh-CN-YunxiNeural-80-4.mp3",
+      "kind": "positive",
+      "sha256": "a9da25e5b863d15704b8af5c9338e3ba42c17d33b8c1129be3650eb4cf6e2a1c"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 40,
+      "text": "开始计时",
+      "file": "positive-zh-CN-YunjianNeural-40-4.mp3",
+      "kind": "positive",
+      "sha256": "377cdf016886f23280eaa8c19f6f4e7ecdb89863b91687af2ff1fbc55c7952b8"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 60,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-XiaoxiaoNeural-60-0.mp3",
+      "kind": "holdout",
+      "sha256": "17545f4ea1219a4f94eef91acdd264e85ad0059456714de35adc30056bb28fa9"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 60,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-XiaoyiNeural-60-1.mp3",
+      "kind": "holdout",
+      "sha256": "5325a3ede4da3eec1b04bb5b9de088b1d696ccf0390bd02bcc91cf76f090a2dc"
+    },
+    {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": 20,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-XiaoxiaoNeural-20-0.mp3",
+      "kind": "holdout",
+      "sha256": "c0f9b3f29611b54c4aea36c483ff24a7ed0910befda3874f3a917d6dc546a2c3"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 20,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-XiaoyiNeural-20-1.mp3",
+      "kind": "holdout",
+      "sha256": "568b98e1ede9a17ebb1a99b00e008adf783a90eddf00bfb3e72aa14a47f7b510"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 20,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-YunxiNeural-20-2.mp3",
+      "kind": "holdout",
+      "sha256": "60fca89da9d81a11b20b3716473035d130cc21d6f09fae7dadc18052f62104be"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 60,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-YunxiNeural-60-2.mp3",
+      "kind": "holdout",
+      "sha256": "df2766737768428c09fbf66016d8b09d167e78018752cd7931eda0014e03e300"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 20,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-YunjianNeural-20-3.mp3",
+      "kind": "holdout",
+      "sha256": "1d0319b376f302f8116282f4540b48710b8b6cf91360f615d6ad81449c3d85ef"
+    },
+    {
+      "voice": "zh-CN-YunjianNeural",
+      "rate": 60,
+      "text": "开始计时",
+      "file": "holdout-zh-CN-YunjianNeural-60-3.mp3",
+      "kind": "holdout",
+      "sha256": "e85698736a6575f29d7604e4289f3795fb16114bb73fb5421b2c17377bc74f78"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始计算",
+      "file": "near-zh-CN-XiaoyiNeural-40-0.mp3",
+      "kind": "near",
+      "sha256": "9c1413718ab7b56ae2f2bbf5e1ad505223c0051091c0909036f8070d109babdc"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始几次",
+      "file": "near-zh-CN-XiaoyiNeural-40-2.mp3",
+      "kind": "near",
+      "sha256": "b621834ea483fb73c4cff5a68242afcd842268783a3ceac812f2073759ca1e0a"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开车计时",
+      "file": "near-zh-CN-XiaoyiNeural-40-3.mp3",
+      "kind": "near",
+      "sha256": "8708408e490a039eebaa506d484e2d2d8abddf690e4d260373a5ad793b747984"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始记录",
+      "file": "near-zh-CN-XiaoyiNeural-40-1.mp3",
+      "kind": "near",
+      "sha256": "2b502f6476e03d8814d1e2fed5d5889c5372ab08c05c057d6581cfb094d56d1b"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "停止计时",
+      "file": "near-zh-CN-XiaoyiNeural-40-4.mp3",
+      "kind": "near",
+      "sha256": "211554c189fa34a8b14c5481f347d04490c953878deaecebbdbf05b55b5b4cb4"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始计数",
+      "file": "near-zh-CN-XiaoyiNeural-40-5.mp3",
+      "kind": "near",
+      "sha256": "778055ad37c645582072a12d0ccf6b29969df8ed0eee9d87cde5a24084aadf56"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开设计师",
+      "file": "near-zh-CN-XiaoyiNeural-40-6.mp3",
+      "kind": "near",
+      "sha256": "3f49b63383bf066faf51c39329f49d9f8371d50d24ce836a40ae9242221e3971"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "快点开始",
+      "file": "near-zh-CN-XiaoyiNeural-40-7.mp3",
+      "kind": "near",
+      "sha256": "0970be233d75bae21fc16170e61f59df0ff56e5a19b19b900090fa788cebc1fb"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "计时器响了",
+      "file": "near-zh-CN-XiaoyiNeural-40-9.mp3",
+      "kind": "near",
+      "sha256": "9bb2df99aeea443d01a5492fe290ab825a353834a66454e896d6d0fad98f77f8"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "计时结束",
+      "file": "near-zh-CN-XiaoyiNeural-40-8.mp3",
+      "kind": "near",
+      "sha256": "2bb9eb42e082aee4ac1b3c6bbfc1ecfa551c461c4a1e70a9e72dfd5c76fd07a2"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "把开水倒进杯子，稍微放凉再喝。",
+      "file": "near-zh-CN-XiaoyiNeural-40-11.mp3",
+      "kind": "near",
+      "sha256": "03f70e6e872fc16eb413ab3c4c6e539c9babd95911be76eb4d5d4a0fc807b39b"
+    },
+    {
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": 40,
+      "text": "开始开会，会议还有十分钟。",
+      "file": "near-zh-CN-XiaoyiNeural-40-10.mp3",
+      "kind": "near",
+      "sha256": "26e6155db9656c6a1348ff28fbf6fa9c6cea7ae9f8c243f97bb11d40785c17e5"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始记录",
+      "file": "near-zh-CN-YunxiNeural-40-1.mp3",
+      "kind": "near",
+      "sha256": "c9688bc4f2f9927818dc09915190558540bed0e540ab2db1b9010329c437d1a5"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始几次",
+      "file": "near-zh-CN-YunxiNeural-40-2.mp3",
+      "kind": "near",
+      "sha256": "9f6017edd6507b3dc6f5aac739d6e151c4d4204721a080f0c7aac0a006ad0ff0"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始计算",
+      "file": "near-zh-CN-YunxiNeural-40-0.mp3",
+      "kind": "near",
+      "sha256": "f88add625e37e0cf6ab0a6e96cbbd2f6ef9de0dd0b6164fb19d1f8f8bf9d71ee"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开车计时",
+      "file": "near-zh-CN-YunxiNeural-40-3.mp3",
+      "kind": "near",
+      "sha256": "c7244e4f986221ad9eac005f28d0dc62bf39e84aff00000865ca6168a3a11e4f"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "停止计时",
+      "file": "near-zh-CN-YunxiNeural-40-4.mp3",
+      "kind": "near",
+      "sha256": "1dee36827574238107940297d2514c8b61021d233230908d05546c083458cfa4"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "快点开始",
+      "file": "near-zh-CN-YunxiNeural-40-7.mp3",
+      "kind": "near",
+      "sha256": "ed1f9977e6b4a320edf4784c4557e6928fe9447a61298e729df54117915454cb"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开设计师",
+      "file": "near-zh-CN-YunxiNeural-40-6.mp3",
+      "kind": "near",
+      "sha256": "3c8f8bfcb7872f5054ecb52ad36aec750dadbf1a4fc94788809fd55d2a794c48"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始计数",
+      "file": "near-zh-CN-YunxiNeural-40-5.mp3",
+      "kind": "near",
+      "sha256": "a8d1292264de098535d539ee407db4420cd7317abbbb3fd69efce4819333dad5"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "计时器响了",
+      "file": "near-zh-CN-YunxiNeural-40-9.mp3",
+      "kind": "near",
+      "sha256": "a91b15256cb26d1b089758b1d6d6ae838d85a53841447c3381e36cd64005fda7"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "把开水倒进杯子，稍微放凉再喝。",
+      "file": "near-zh-CN-YunxiNeural-40-11.mp3",
+      "kind": "near",
+      "sha256": "44027eb154fe9a534a76432a4fe5790c6a9f66a1e843686b67bfaa5632958a4f"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "计时结束",
+      "file": "near-zh-CN-YunxiNeural-40-8.mp3",
+      "kind": "near",
+      "sha256": "9794429f1ce77e9f044935a86b514929721a3d9728d1eb8001a49fa94f844479"
+    },
+    {
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "text": "开始开会，会议还有十分钟。",
+      "file": "near-zh-CN-YunxiNeural-40-10.mp3",
+      "kind": "near",
+      "sha256": "a15610f36ebd0abe1b40990e244e11b2cd75ded1e9ab213bd05e30dcfa24f880"
+    }
+  ],
+  "validation": [
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": -20,
+      "text": "开始计时",
+      "file": "validation-zh-CN-YunyangNeural--20-0.mp3",
+      "kind": "validation",
+      "sha256": "47166932292c7deeeb03efc2728da41f415fd93b35bad35f649755ff249776cb"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 30,
+      "text": "开始计时",
+      "file": "validation-zh-CN-YunxiaNeural-30-0.mp3",
+      "kind": "validation",
+      "sha256": "dc24ffba4698844bc3b55fb88c51ec4c59587592dd7230936a02ce1b59a55edd"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": -20,
+      "text": "开始计时",
+      "file": "validation-zh-CN-YunxiaNeural--20-0.mp3",
+      "kind": "validation",
+      "sha256": "b377b3c396406e3796b7351e183497070a7a4c94fb219fd4c6e80cb3c9f043fa"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 70,
+      "text": "开始计时",
+      "file": "validation-zh-CN-YunxiaNeural-70-0.mp3",
+      "kind": "validation",
+      "sha256": "4a1710507763e261cbfb1220b346e2beac68b44ec527da3e6ccbd7b8db9ce2c9"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 70,
+      "text": "开始计时",
+      "file": "validation-zh-CN-YunyangNeural-70-0.mp3",
+      "kind": "validation",
+      "sha256": "cf66ded3f27c9db5d7430302761d12c42475b822d1b7e4334c7a97c59f433acb"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 30,
+      "text": "开始计数",
+      "file": "validation-negative-zh-CN-YunxiaNeural-30-1.mp3",
+      "kind": "validation-negative",
+      "sha256": "8236b8521b49e594bcd280e3f52e2e981407642d8bd6fca0c006e40045dcf522"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 30,
+      "text": "开始计时",
+      "file": "validation-zh-CN-YunyangNeural-30-0.mp3",
+      "kind": "validation",
+      "sha256": "93c57cac7cf1e02c0b6e61dc04be926a637c69de86f25a575bd007c9883bfdd3"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 30,
+      "text": "开始计算",
+      "file": "validation-negative-zh-CN-YunxiaNeural-30-0.mp3",
+      "kind": "validation-negative",
+      "sha256": "904e6af15e331bcec348c68d1c486c8e788bb28eb812188fc334845992c2daf5"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 30,
+      "text": "开始开始",
+      "file": "validation-negative-zh-CN-YunxiaNeural-30-2.mp3",
+      "kind": "validation-negative",
+      "sha256": "ef8fb89bb3b24a772267aa4154c349eb57829931c6002e1f919e89ec27923e64"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 30,
+      "text": "现在几点了",
+      "file": "validation-negative-zh-CN-YunxiaNeural-30-5.mp3",
+      "kind": "validation-negative",
+      "sha256": "a1d21e32ec0987e3a50be79605b74b049fe60fee158d6fdcc57cf37d8f633e43"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 30,
+      "text": "停止计时",
+      "file": "validation-negative-zh-CN-YunxiaNeural-30-4.mp3",
+      "kind": "validation-negative",
+      "sha256": "c555c106c29d097e2ca02edef042a53dc8de191ef48414bc872bc2f9f1fa3f93"
+    },
+    {
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": 30,
+      "text": "开水开水",
+      "file": "validation-negative-zh-CN-YunxiaNeural-30-3.mp3",
+      "kind": "validation-negative",
+      "sha256": "5d51c79a11accdcaf252d55a493d1fb83cdcb4641d2f2d21d83fd14f4ec0875d"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 30,
+      "text": "开始计数",
+      "file": "validation-negative-zh-CN-YunyangNeural-30-1.mp3",
+      "kind": "validation-negative",
+      "sha256": "91e88f08bfacdb6b4022ac72712e1d65a5fe72076b8c3bd8cdf29d5db500668b"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 30,
+      "text": "开始计算",
+      "file": "validation-negative-zh-CN-YunyangNeural-30-0.mp3",
+      "kind": "validation-negative",
+      "sha256": "692c998454b7a0617ed9fb3dd3c8545a55c0955fc63be34a673a19e29dfd4dbc"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 30,
+      "text": "开水开水",
+      "file": "validation-negative-zh-CN-YunyangNeural-30-3.mp3",
+      "kind": "validation-negative",
+      "sha256": "e041e505bda627ea60ef05926a3eab561295bec50fd899e5c2a1fa074137f1cd"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 30,
+      "text": "开始开始",
+      "file": "validation-negative-zh-CN-YunyangNeural-30-2.mp3",
+      "kind": "validation-negative",
+      "sha256": "8b6c63ebb61beef13146a68c9dd742a712e108e22fc5c2f2dce415ceb05032da"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 30,
+      "text": "现在几点了",
+      "file": "validation-negative-zh-CN-YunyangNeural-30-5.mp3",
+      "kind": "validation-negative",
+      "sha256": "ce04e04d75cf5af9b6d3e96dea3c55b4bffa4ee703d5d1762a261dc0946e4580"
+    },
+    {
+      "voice": "zh-CN-YunyangNeural",
+      "rate": 30,
+      "text": "停止计时",
+      "file": "validation-negative-zh-CN-YunyangNeural-30-4.mp3",
+      "kind": "validation-negative",
+      "sha256": "b3dfddbcb6ae85ea14bd624f82064ce1c74b4c2956d37ca57dcbdc2b95fe7f8a"
+    }
+  ]
+}

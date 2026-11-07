@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-07",
+  "keyword": "开始计时",
+  "engine": "sherpa-onnx via @sherpaw/kws 0.3.0 WASM",
+  "config": {
+    "score": 0.6,
+    "threshold": 0.35,
+    "maxActivePaths": 8
+  },
+  "browser": "Chromium 131.0.6778.204 Linux",
+  "tuningSet": [
+    {
+      "condition": "clean",
+      "detected": 20,
+      "positiveCount": 20,
+      "falsePositive": 0,
+      "negativeCount": 113
+    },
+    {
+      "condition": "noise10",
+      "detected": 20,
+      "positiveCount": 20,
+      "falsePositive": 0,
+      "negativeCount": 104
+    },
+    {
+      "condition": "noise5",
+      "detected": 19,
+      "positiveCount": 20,
+      "falsePositive": 0,
+      "negativeCount": 104
+    },
+    {
+      "condition": "speech10",
+      "detected": 20,
+      "positiveCount": 20,
+      "falsePositive": 0,
+      "negativeCount": 104
+    },
+    {
+      "condition": "speech5",
+      "detected": 19,
+      "positiveCount": 20,
+      "falsePositive": 0,
+      "negativeCount": 104
+    }
+  ],
+  "freshVoicesNative": [
+    {
+      "condition": "clean",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 21
+    },
+    {
+      "condition": "noise10",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    },
+    {
+      "condition": "noise5",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    },
+    {
+      "condition": "speech10",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    },
+    {
+      "condition": "speech5",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    }
+  ],
+  "misses": [
+    {
+      "text": "开始计时",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 40,
+      "condition": "noise5"
+    },
+    {
+      "text": "开始计时",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": 60,
+      "condition": "speech5"
+    }
+  ],
+  "browserIntegration": {
+    "started": "running",
+    "paused": "paused",
+    "resumed": "running",
+    "repeated": "running",
+    "events": [
+      {
+        "word": "开始",
+        "before": "ready",
+        "after": "running",
+        "remainingBefore": 30000,
+        "remainingAfter": 30000,
+        "result": {
+          "keyword": "开始计时",
+          "label": "开始计时",
+          "startTime": 0,
+          "timestamps": [
+            0.3199999928474426,
+            0.35999998450279236,
+            0.47999998927116394,
+            0.5600000023841858,
+            0.6800000071525574,
+            0.7999999523162842,
+            0.9599999785423279,
+            1.0399999618530273
+          ],
+          "tokens": [
+            "k",
+            "āi",
+            "sh",
+            "ǐ",
+            "j",
+            "ì",
+            "sh",
+            "í"
+          ]
+        }
+      },
+      {
+        "word": "开始",
+        "before": "paused",
+        "after": "running",
+        "remainingBefore": 27770.5,
+        "remainingAfter": 27770.5,
+        "result": {
+          "keyword": "开始计时",
+          "label": "开始计时",
+          "startTime": 0,
+          "timestamps": [
+            0.3199999928474426,
+            0.35999998450279236,
+            0.5199999809265137,
+            0.5600000023841858,
+            0.7199999690055847,
+            0.8399999737739563,
+            0.9599999785423279,
+            1.0399999618530273
+          ],
+          "tokens": [
+            "k",
+            "āi",
+            "sh",
+            "ǐ",
+            "j",
+            "ì",
+            "sh",
+            "í"
+          ]
+        }
+      },
+      {
+        "word": "开始",
+        "before": "running",
+        "after": "running",
+        "remainingBefore": 23567.200000000186,
+        "remainingAfter": 23567.200000000186,
+        "result": {
+          "keyword": "开始计时",
+          "label": "开始计时",
+          "startTime": 0,
+          "timestamps": [
+            0.3199999928474426,
+            0.35999998450279236,
+            0.47999998927116394,
+            0.5600000023841858,
+            0.7199999690055847,
+            0.7999999523162842,
+            0.9599999785423279,
+            1.0399999618530273
+          ],
+          "tokens": [
+            "k",
+            "āi",
+            "sh",
+            "ǐ",
+            "j",
+            "ì",
+            "sh",
+            "í"
+          ]
+        }
+      }
+    ],
+    "errors": []
+  },
+  "limitations": [
+    "Synthetic Edge TTS and mixed noise; not a physical microphone or room/accent evaluation.",
+    "Two heavily noisy tuning samples missed.",
+    "Nine official human-speech negatives repeat in the independent-voice run; do not count them as new negatives."
+  ],
+  "freshVoicesBrowser": [
+    {
+      "condition": "clean",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 21
+    },
+    {
+      "condition": "noise10",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    },
+    {
+      "condition": "noise5",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    },
+    {
+      "condition": "speech10",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    },
+    {
+      "condition": "speech5",
+      "detected": 6,
+      "positiveCount": 6,
+      "falsePositive": 0,
+      "negativeCount": 12
+    }
+  ],
+  "browserNativeAgreement": true,
+  "downloads": {
+    "first": {
+      "type": "progress",
+      "loaded": 54997,
+      "total": 25557651
+    },
+    "lastProgress": {
+      "type": "progress",
+      "loaded": 25557651,
+      "total": 25557651
+    },
+    "updates": 235
+  }
+}
